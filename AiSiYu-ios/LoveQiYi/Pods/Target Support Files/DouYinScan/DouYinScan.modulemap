@@ -1,0 +1,6 @@
+framework module DouYinScan {
+  umbrella header "DouYinScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

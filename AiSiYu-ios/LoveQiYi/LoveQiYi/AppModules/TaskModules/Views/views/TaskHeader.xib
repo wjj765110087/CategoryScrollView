@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WelfareHeader" id="Hex-tZ-X0I" customClass="TaskHeader" customModule="LoveQiYi">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIc" translatesAutoresizingMaskIntoConstraints="NO" id="dLW-Eh-N2Q">
+                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="dhO-Z5-5Pb"/>
+                        <constraint firstAttribute="height" constant="60" id="z6P-a2-tbI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79G-Ab-puG">
+                    <rect key="frame" x="95" y="0.0" width="47" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计邀请人数:199人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wee-LP-p2J">
+                    <rect key="frame" x="95" y="42" width="139" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dLW-Eh-N2Q" firstAttribute="top" secondItem="Ae4-DE-8I8" secondAttribute="top" id="4Bz-eT-w5R"/>
+                <constraint firstItem="79G-Ab-puG" firstAttribute="top" secondItem="dLW-Eh-N2Q" secondAttribute="top" id="4cv-YR-kEW"/>
+                <constraint firstItem="wee-LP-p2J" firstAttribute="leading" secondItem="79G-Ab-puG" secondAttribute="leading" id="Clg-FI-cvQ"/>
+                <constraint firstItem="79G-Ab-puG" firstAttribute="leading" secondItem="dLW-Eh-N2Q" secondAttribute="trailing" constant="15" id="WF5-TT-8rr"/>
+                <constraint firstItem="dLW-Eh-N2Q" firstAttribute="leading" secondItem="Hex-tZ-X0I" secondAttribute="leading" constant="20" id="e9Z-uh-Sm8"/>
+                <constraint firstItem="wee-LP-p2J" firstAttribute="bottom" secondItem="dLW-Eh-N2Q" secondAttribute="bottom" id="uci-OW-XEJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Ae4-DE-8I8"/>
+            <connections>
+                <outlet property="headerImg" destination="dLW-Eh-N2Q" id="OWf-7d-1W5"/>
+                <outlet property="inviteCountLab" destination="wee-LP-p2J" id="TgE-9a-eyF"/>
+                <outlet property="nameLab" destination="79G-Ab-puG" id="t2X-Wc-zbt"/>
+            </connections>
+            <point key="canvasLocation" x="77.599999999999994" y="-85.457271364317847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PIc" width="19" height="19"/>
+    </resources>
+</document>

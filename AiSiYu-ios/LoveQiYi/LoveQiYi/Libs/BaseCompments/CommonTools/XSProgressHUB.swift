@@ -1,0 +1,145 @@
+//
+//  XSProgressHUB.swift
+//  XSVideo
+//
+//  Created by pro5 on 2019/1/16.
+//  Copyright © 2019年 pro5. All rights reserved.
+//
+
+import Foundation
+import MBProgressHUD
+
+/// 对MBProgressHUD 的二次封装，便于替换
+class XSProgressHUD: NSObject {
+    
+    static private let instance: XSProgressHUD = XSProgressHUD()
+    class func shareHub() -> XSProgressHUD {
+        return instance
+    }
+    
+    var hud: MBProgressHUD?
+    
+    enum HUBType {
+        case SingleLoading   // 菊花加载
+        case TextOnlyType    // 纯文字
+        case SuccessType     // 成功
+        case CycleLoading    // 环形加载
+        case CustomAnimation // 自定义帧动画
+        case CustomerImage   // 自定义图片
+    }
+    
+    private class func showAdded(to view: UIView, type: HUBType, _ msg: String? = nil, _ customImage: UIImageView? = nil , _ bgColor: UIColor? = nil, _ titleColor: UIColor? = UIColor.darkText, animated: Bool) {
+        //已存在，先移除
+        if XSProgressHUD.shareHub().hud != nil {
+            XSProgressHUD.shareHub().hud!.hide(animated: animated)
+            XSProgressHUD.shareHub().hud = nil
+        }
+        view.endEditing(true)  // 防止键盘遮挡
+        XSProgressHUD.shareHub().hud = MBProgressHUD.showAdded(to: view, animated: animated)
+       // XSProgressHUD.shareHub().hud?.dimBackground = true // 是否显示半透明 背景
+        XSProgressHUD.shareHub().hud?.margin = 7
+        XSProgressHUD.shareHub().hud?.removeFromSuperViewOnHide = true
+        XSProgressHUD.shareHub().hud?.detailsLabel.text = msg ?? ""
+        XSProgressHUD.shareHub().hud?.detailsLabel.font = UIFont.systemFont(ofSize: 14)
+        switch type {
+        case .TextOnlyType:
+            XSProgressHUD.shareHub().hud?.mode = .text
+            break
+        case .SingleLoading:
+            XSProgressHUD.shareHub().hud?.mode = .indeterminate
+            break
+        case .SuccessType:
+            XSProgressHUD.shareHub().hud?.mode = .customView
+            XSProgressHUD.shareHub().hud?.customView = UIImageView(image: UIImage(named: "success"))
+            break
+        case .CycleLoading:
+            XSProgressHUD.shareHub().hud?.mode = .customView
+            let imgView = UIImageView(image: UIImage(named: "CycleLoading"))
+            let animation = CABasicAnimation(keyPath: "transform.rotation")
+            animation.toValue = Double.pi * 2
+            animation.duration = 1.5
+            animation.repeatCount = Float(UInt.max)
+            imgView.layer.add(animation, forKey: nil)
+            XSProgressHUD.shareHub().hud?.customView = imgView
+            break
+        case .CustomAnimation:
+            XSProgressHUD.shareHub().hud?.mode = .customView
+            XSProgressHUD.shareHub().hud?.bezelView.color = UIColor.clear // (1.+ 版本这样赋值)
+            if bgColor == nil {
+               // XSProgressHUD.shareHub().hud?.bezelView.style = .solidColor
+                XSProgressHUD.shareHub().hud?.bezelView.color = UIColor(white: 0.0, alpha: 0.3)
+                XSProgressHUD.shareHub().hud?.backgroundColor = UIColor.clear
+                XSProgressHUD.shareHub().hud?.detailsLabel.textColor = UIColor.white
+            } else {
+                //XSProgressHUD.shareHub().hud?.bezelView.style = .blur
+                XSProgressHUD.shareHub().hud?.bezelView.color = UIColor(white: 0.0, alpha: 0.3)
+                XSProgressHUD.shareHub().hud?.detailsLabel.textColor = UIColor.white
+            }
+            XSProgressHUD.shareHub().hud?.detailsLabel.text = msg ?? "加载中..."
+            XSProgressHUD.shareHub().hud?.detailsLabel.font = UIFont.systemFont(ofSize: 12)
+            XSProgressHUD.shareHub().hud?.customView = customImage
+            break
+        case .CustomerImage:
+            XSProgressHUD.shareHub().hud?.mode = .customView
+            if customImage != nil {
+                XSProgressHUD.shareHub().hud?.customView = customImage
+            }
+            break
+        }
+    }
+    /// 文字，1.5秒自动消失
+    class func showMsg(to view: UIView, msg: String?, animated: Bool) {
+        showAdded(to: view, type: .TextOnlyType, msg, nil, nil, animated: animated)
+        XSProgressHUD.shareHub().hud?.hide(animated: animated, afterDelay: 1.5)
+    }
+    /// 文字加图片，1.5秒自动消失
+    class func showMsgWith(customImage: UIImageView, msg: String, onView: UIView, animated: Bool) {
+        showAdded(to: onView, type: .CustomerImage, msg, customImage, nil, animated: animated)
+        XSProgressHUD.shareHub().hud?.hide(animated: animated, afterDelay: 1.5)
+    }
+    /// 显示成功
+    class func showSuccess(msg: String?, onView: UIView, animated: Bool) {
+        showAdded(to: onView, type: .SuccessType, msg, nil, nil, animated: animated)
+        XSProgressHUD.shareHub().hud?.hide(animated: animated, afterDelay: 1.5)
+    }
+    /// Single Loading
+    class func showProgress(msg: String?, onView: UIView, animated: Bool) {
+        showAdded(to: onView, type: .SingleLoading, msg, nil, nil, animated: animated)
+    }
+    /// Cycle Loading
+    class func showCycleProgress(msg: String?, onView: UIView, animated: Bool) {
+        showAdded(to: onView, type: .CycleLoading, msg, nil, nil, animated: animated)
+    }
+    /// Custom Animation
+    class func showCustomAnimation(msg: String?, onView: UIView, imageNames: [String]?, bgColor: UIColor? = UIColor.clear, _ titleColor: UIColor? = UIColor.darkText, animated: Bool) {
+        var images = [UIImage]()
+        if imageNames == nil {
+            let imageNameArray = ConstValue.loadingImageNames
+            for name in imageNameArray {
+                if let image = UIImage(named: name) {
+                    images.append(image)
+                }
+            }
+        } else {
+            for name in imageNames! {
+                if let image = UIImage(named: name) {
+                    images.append(image)
+                }
+            }
+        }
+        let imageView = UIImageView()
+        imageView.backgroundColor = UIColor.clear
+        imageView.animationImages = images
+        imageView.animationRepeatCount = 1000
+        imageView.animationDuration = 0.075 * Double(images.count + 1)
+        imageView.startAnimating()
+        showAdded(to: onView, type: .CustomAnimation, msg, imageView, bgColor, titleColor ,animated: animated)
+    }
+    /// 消失
+    class func hide(for: UIView, animated: Bool) {
+        if XSProgressHUD.shareHub().hud != nil {
+            XSProgressHUD.shareHub().hud?.hide(animated: animated)
+        }
+    }
+    
+}

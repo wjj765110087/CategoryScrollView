@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GameControllView" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="149"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_ControllBg1" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-Jz-K9D">
+                    <rect key="frame" x="0.0" y="0.0" width="408" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="wvX-4M-76G"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-Pi-3l2">
+                    <rect key="frame" x="0.0" y="70" width="408" height="79"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-X3-PiQ">
+                    <rect key="frame" x="35" y="24.5" width="56" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="MoP-cO-Rja"/>
+                        <constraint firstAttribute="width" constant="56" id="vUs-VY-bpm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <state key="normal" title="清零" image="game_CoinClean"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonClickHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="N0h-6K-QyI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-6e-dLu">
+                    <rect key="frame" x="116" y="24.5" width="56" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="AcP-RA-dRi"/>
+                        <constraint firstAttribute="height" constant="33" id="dZH-M2-8gR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <state key="normal" title="全压" image="game_CoinAllIn"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonClickHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="I3s-b8-7tU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVQ-Rv-lFx">
+                    <rect key="frame" x="251" y="30" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZ1-dv-CJQ">
+                    <rect key="frame" x="290" y="25" width="83" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cp1-QL-NBu">
+                            <rect key="frame" x="6" y="6" width="71" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="jK3-Yr-uEr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="0.16307255993150685" green="0.067871487172602746" blue="0.063427511382191742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKz-eO-bED">
+                            <rect key="frame" x="6" y="6" width="71" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Acw-TP-K1N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="1" green="0.1639287243150685" blue="0.1917183932315068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mKz-eO-bED" firstAttribute="trailing" secondItem="Cp1-QL-NBu" secondAttribute="trailing" id="ChR-AC-Rn9"/>
+                        <constraint firstItem="mKz-eO-bED" firstAttribute="top" secondItem="Cp1-QL-NBu" secondAttribute="top" id="Nof-gR-J3F"/>
+                        <constraint firstAttribute="width" constant="83" id="Zzr-yW-G0y"/>
+                        <constraint firstAttribute="height" constant="28" id="bfT-ok-jIx"/>
+                        <constraint firstAttribute="trailing" secondItem="Cp1-QL-NBu" secondAttribute="trailing" constant="6" id="la1-cn-CvW"/>
+                        <constraint firstItem="mKz-eO-bED" firstAttribute="leading" secondItem="Cp1-QL-NBu" secondAttribute="leading" id="rBW-0O-8nS"/>
+                        <constraint firstItem="Cp1-QL-NBu" firstAttribute="leading" secondItem="uZ1-dv-CJQ" secondAttribute="leading" constant="6" id="sL8-8K-yks"/>
+                        <constraint firstItem="Cp1-QL-NBu" firstAttribute="centerY" secondItem="uZ1-dv-CJQ" secondAttribute="centerY" constant="2" id="sQQ-Gj-e04"/>
+                        <constraint firstItem="mKz-eO-bED" firstAttribute="bottom" secondItem="Cp1-QL-NBu" secondAttribute="bottom" id="y2W-0v-B54"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-yg-H3U">
+                    <rect key="frame" x="0.0" y="70" width="408" height="79"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                    <state key="normal" backgroundImage="game_startNormal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="game_startHL"/>
+                    <connections>
+                        <action selector="buttonClickHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="I1e-ri-LgA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uZ1-dv-CJQ" firstAttribute="leading" secondItem="OVQ-Rv-lFx" secondAttribute="trailing" constant="8" id="2hp-dX-SOD"/>
+                <constraint firstItem="ThL-yg-H3U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="46I-Lg-lsM"/>
+                <constraint firstAttribute="bottom" secondItem="f4I-Pi-3l2" secondAttribute="bottom" id="4tk-Mg-vQU"/>
+                <constraint firstAttribute="trailing" secondItem="Axv-Jz-K9D" secondAttribute="trailing" id="5QA-Zm-t47"/>
+                <constraint firstItem="f4I-Pi-3l2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dna-h5-tcB"/>
+                <constraint firstItem="uZ1-dv-CJQ" firstAttribute="centerY" secondItem="OVQ-Rv-lFx" secondAttribute="centerY" id="HmR-OU-jZZ"/>
+                <constraint firstAttribute="trailing" secondItem="ThL-yg-H3U" secondAttribute="trailing" id="Nze-n8-5pF"/>
+                <constraint firstItem="f4I-Pi-3l2" firstAttribute="top" secondItem="Axv-Jz-K9D" secondAttribute="bottom" id="Y0Y-nf-AuN"/>
+                <constraint firstItem="zDV-X3-PiQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="ZtR-95-CFH"/>
+                <constraint firstAttribute="bottom" secondItem="ThL-yg-H3U" secondAttribute="bottom" id="ac4-yu-xiV"/>
+                <constraint firstItem="OVQ-Rv-lFx" firstAttribute="centerY" secondItem="zDV-X3-PiQ" secondAttribute="centerY" constant="-2" id="dMi-sa-IZH"/>
+                <constraint firstItem="f4I-Pi-3l2" firstAttribute="top" secondItem="ThL-yg-H3U" secondAttribute="top" id="dof-B4-VQq"/>
+                <constraint firstAttribute="trailing" secondItem="uZ1-dv-CJQ" secondAttribute="trailing" constant="35" id="gcv-Ul-bTs"/>
+                <constraint firstItem="5bu-6e-dLu" firstAttribute="leading" secondItem="zDV-X3-PiQ" secondAttribute="trailing" constant="25" id="l2p-81-LvO"/>
+                <constraint firstAttribute="trailing" secondItem="f4I-Pi-3l2" secondAttribute="trailing" id="nF4-yJ-TQE"/>
+                <constraint firstItem="Axv-Jz-K9D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oc4-W8-xzK"/>
+                <constraint firstItem="uZ1-dv-CJQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="wVf-RJ-166"/>
+                <constraint firstItem="5bu-6e-dLu" firstAttribute="centerY" secondItem="zDV-X3-PiQ" secondAttribute="centerY" id="zUx-Xr-pVU"/>
+                <constraint firstItem="Axv-Jz-K9D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zmh-5z-9eK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="allInButton" destination="5bu-6e-dLu" id="GHg-hY-CFm"/>
+                <outlet property="cleanButton" destination="zDV-X3-PiQ" id="dcw-IL-51o"/>
+                <outlet property="starButton" destination="ThL-yg-H3U" id="kRj-cu-mE6"/>
+                <outlet property="userCoinBgLabel" destination="Cp1-QL-NBu" id="Gnp-J6-gET"/>
+                <outlet property="userCoinsLabel" destination="mKz-eO-bED" id="Dx5-yB-JO8"/>
+                <outlet property="userCoinsView" destination="uZ1-dv-CJQ" id="hyr-hm-iV0"/>
+            </connections>
+            <point key="canvasLocation" x="-921.73913043478262" y="-29.129464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="game_CoinAllIn" width="63" height="32.5"/>
+        <image name="game_CoinClean" width="63" height="32.5"/>
+        <image name="game_ControllBg1" width="375.5" height="51.5"/>
+        <image name="game_startHL" width="375" height="100"/>
+        <image name="game_startNormal" width="375" height="100"/>
+    </resources>
+</document>

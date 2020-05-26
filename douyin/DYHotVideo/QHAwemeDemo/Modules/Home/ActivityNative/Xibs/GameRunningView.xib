@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GameRunningView" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="434"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_RunViewBg" translatesAutoresizingMaskIntoConstraints="NO" id="2aT-Xc-ONC">
+                    <rect key="frame" x="0.0" y="0.0" width="476" height="434"/>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgT-do-Qmz" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="10" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MgT-do-Qmz" secondAttribute="height" multiplier="5:6" id="fTX-bp-raV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pf-Gk-GkY" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="99.5" y="10" width="68" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrK-j9-F7e" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="169.5" y="10" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ed-ck-xXS" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="239" y="10" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-Yn-o5w" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="308.5" y="10" width="68" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSx-1Y-cp6" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="378.5" y="10" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-J5-dl2" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="378.5" y="176.5" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diS-Pv-n3D" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="378.5" y="259.5" width="67.5" height="81.5"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUU-WL-dFP" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="378.5" y="343" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-2C-Stf" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="308.5" y="343" width="68" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwT-RV-PLE" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="169.5" y="343" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tG6-jI-vDO" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="99.5" y="343" width="68" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-CU-2BC" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="343" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yU0-AQ-RwH" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="259.5" width="67.5" height="81.5"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1P-Qn-MaQ" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="176.5" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-7S-z8j" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="93" width="67.5" height="81.5"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lva-wC-Pnt" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="378.5" y="93" width="67.5" height="81.5"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView clipsSubviews="YES" tag="20" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_centerNormalBg" translatesAutoresizingMaskIntoConstraints="NO" id="ZQs-wG-xsY">
+                    <rect key="frame" x="100.5" y="94" width="275" height="246"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="21" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_centerNormalIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6EV-Tu-XZe">
+                    <rect key="frame" x="190.5" y="152" width="95" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Sv8-jQ-YW4"/>
+                        <constraint firstAttribute="width" constant="95" id="uPv-mg-LxG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10金币押一次 赢道具兑大奖" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-mB-c9K">
+                    <rect key="frame" x="120.5" y="258" width="235" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS8-Gg-Uja" customClass="GameRunItemView" customModule="QHAwemeDemo" customModuleProvider="target">
+                    <rect key="frame" x="239" y="343" width="67.5" height="81"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lva-wC-Pnt" firstAttribute="top" secondItem="YSx-1Y-cp6" secondAttribute="bottom" constant="2" id="0x7-pC-DnD"/>
+                <constraint firstItem="YSx-1Y-cp6" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="1HH-pF-L7B"/>
+                <constraint firstItem="Zh4-CU-2BC" firstAttribute="top" secondItem="yU0-AQ-RwH" secondAttribute="bottom" constant="2" id="1VI-NW-B0j"/>
+                <constraint firstItem="diS-Pv-n3D" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="3Om-A5-N3D"/>
+                <constraint firstItem="Uqe-2C-Stf" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="4x0-en-1Q9"/>
+                <constraint firstItem="NwT-RV-PLE" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="69j-L3-KHe"/>
+                <constraint firstItem="Sgh-7S-z8j" firstAttribute="centerX" secondItem="MgT-do-Qmz" secondAttribute="centerX" id="6hG-2j-4ke"/>
+                <constraint firstAttribute="bottom" secondItem="2aT-Xc-ONC" secondAttribute="bottom" id="77J-3c-zCK"/>
+                <constraint firstItem="qiy-J5-dl2" firstAttribute="top" secondItem="lva-wC-Pnt" secondAttribute="bottom" constant="2" id="7QR-wo-pCv"/>
+                <constraint firstItem="C1P-Qn-MaQ" firstAttribute="bottom" secondItem="yU0-AQ-RwH" secondAttribute="top" constant="-2" id="9XS-1j-Opd"/>
+                <constraint firstItem="2aT-Xc-ONC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9a6-ba-Uya"/>
+                <constraint firstItem="YSx-1Y-cp6" firstAttribute="centerY" secondItem="MgT-do-Qmz" secondAttribute="centerY" id="9gQ-b3-Ish"/>
+                <constraint firstItem="6EV-Tu-XZe" firstAttribute="centerX" secondItem="ZQs-wG-xsY" secondAttribute="centerX" id="Ago-ZA-WC8"/>
+                <constraint firstItem="2Ed-ck-xXS" firstAttribute="height" secondItem="oiz-Yn-o5w" secondAttribute="height" id="AnX-od-V66"/>
+                <constraint firstItem="nrK-j9-F7e" firstAttribute="bottom" secondItem="ZQs-wG-xsY" secondAttribute="top" constant="-3" id="Bmo-ue-1pw"/>
+                <constraint firstItem="diS-Pv-n3D" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="CTA-Wk-0pH"/>
+                <constraint firstItem="yU0-AQ-RwH" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="DQ1-4n-NLx"/>
+                <constraint firstItem="Uqe-2C-Stf" firstAttribute="centerY" secondItem="tG6-jI-vDO" secondAttribute="centerY" id="DWC-2f-OSH"/>
+                <constraint firstItem="lva-wC-Pnt" firstAttribute="centerX" secondItem="YSx-1Y-cp6" secondAttribute="centerX" id="EL8-dw-QhM"/>
+                <constraint firstItem="9bf-mB-c9K" firstAttribute="leading" secondItem="ZQs-wG-xsY" secondAttribute="leading" constant="20" id="EXe-7J-f5V"/>
+                <constraint firstItem="2Ed-ck-xXS" firstAttribute="leading" secondItem="nrK-j9-F7e" secondAttribute="trailing" constant="2" id="HhX-8O-Q11"/>
+                <constraint firstItem="NwT-RV-PLE" firstAttribute="centerY" secondItem="tG6-jI-vDO" secondAttribute="centerY" id="IJo-bl-nsL"/>
+                <constraint firstItem="diS-Pv-n3D" firstAttribute="centerX" secondItem="YSx-1Y-cp6" secondAttribute="centerX" id="Iwj-7U-OK5"/>
+                <constraint firstItem="FS8-Gg-Uja" firstAttribute="leading" secondItem="NwT-RV-PLE" secondAttribute="trailing" constant="2" id="JGR-jE-zV3"/>
+                <constraint firstItem="oiz-Yn-o5w" firstAttribute="centerY" secondItem="MgT-do-Qmz" secondAttribute="centerY" id="M92-2Q-OPn"/>
+                <constraint firstItem="YSx-1Y-cp6" firstAttribute="leading" secondItem="oiz-Yn-o5w" secondAttribute="trailing" constant="2" id="MzD-Ww-mhO"/>
+                <constraint firstItem="C1P-Qn-MaQ" firstAttribute="trailing" secondItem="ZQs-wG-xsY" secondAttribute="leading" constant="-3" id="Ny4-Ut-Qby"/>
+                <constraint firstItem="2Ed-ck-xXS" firstAttribute="width" secondItem="oiz-Yn-o5w" secondAttribute="width" id="Ocr-gt-pwx"/>
+                <constraint firstItem="nrK-j9-F7e" firstAttribute="leading" secondItem="4pf-Gk-GkY" secondAttribute="trailing" constant="2" id="Pk2-s8-hvq"/>
+                <constraint firstItem="yU0-AQ-RwH" firstAttribute="centerX" secondItem="MgT-do-Qmz" secondAttribute="centerX" id="Qer-mE-uzl"/>
+                <constraint firstItem="yU0-AQ-RwH" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="Sz7-22-qfx"/>
+                <constraint firstItem="bUU-WL-dFP" firstAttribute="centerX" secondItem="YSx-1Y-cp6" secondAttribute="centerX" id="UPh-gd-fCi"/>
+                <constraint firstItem="9bf-mB-c9K" firstAttribute="top" secondItem="6EV-Tu-XZe" secondAttribute="bottom" constant="6" id="VTX-Cf-ThQ"/>
+                <constraint firstItem="C1P-Qn-MaQ" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="VtB-hk-KyR"/>
+                <constraint firstItem="nrK-j9-F7e" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="Wqt-yt-Vgg"/>
+                <constraint firstItem="bUU-WL-dFP" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="X5P-4S-b0y"/>
+                <constraint firstItem="4pf-Gk-GkY" firstAttribute="centerY" secondItem="MgT-do-Qmz" secondAttribute="centerY" id="XI0-WD-nvj"/>
+                <constraint firstItem="qiy-J5-dl2" firstAttribute="centerX" secondItem="YSx-1Y-cp6" secondAttribute="centerX" id="Xxx-oc-E1H"/>
+                <constraint firstItem="C1P-Qn-MaQ" firstAttribute="top" secondItem="Sgh-7S-z8j" secondAttribute="bottom" constant="2" id="YHz-RL-BUE"/>
+                <constraint firstItem="MgT-do-Qmz" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="a5X-Ap-9IY"/>
+                <constraint firstItem="Zh4-CU-2BC" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="aDC-5k-c5u"/>
+                <constraint firstItem="4pf-Gk-GkY" firstAttribute="leading" secondItem="MgT-do-Qmz" secondAttribute="trailing" constant="2" id="bcR-eJ-hIO"/>
+                <constraint firstItem="4pf-Gk-GkY" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="be3-EL-sjn"/>
+                <constraint firstAttribute="trailing" secondItem="2aT-Xc-ONC" secondAttribute="trailing" id="cHB-P3-NZn"/>
+                <constraint firstItem="Uqe-2C-Stf" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="crr-cE-Cgo"/>
+                <constraint firstItem="tG6-jI-vDO" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="cuT-1m-xyx"/>
+                <constraint firstItem="FS8-Gg-Uja" firstAttribute="height" secondItem="NwT-RV-PLE" secondAttribute="height" id="cyp-AA-A45"/>
+                <constraint firstAttribute="trailing" secondItem="YSx-1Y-cp6" secondAttribute="trailing" constant="30" id="dan-KV-oGt"/>
+                <constraint firstItem="9bf-mB-c9K" firstAttribute="trailing" secondItem="ZQs-wG-xsY" secondAttribute="trailing" constant="-20" id="dm4-wQ-zLJ"/>
+                <constraint firstItem="MgT-do-Qmz" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="ezc-E5-F54"/>
+                <constraint firstItem="bUU-WL-dFP" firstAttribute="centerY" secondItem="tG6-jI-vDO" secondAttribute="centerY" id="fCm-We-DMj"/>
+                <constraint firstItem="2aT-Xc-ONC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fOh-Pp-ifP"/>
+                <constraint firstItem="Zh4-CU-2BC" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="fmM-JO-Jsg"/>
+                <constraint firstItem="lva-wC-Pnt" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="gXH-w5-kbC"/>
+                <constraint firstItem="tG6-jI-vDO" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="gmO-8X-bJc"/>
+                <constraint firstItem="NwT-RV-PLE" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="hPJ-JS-BZ5"/>
+                <constraint firstItem="Zh4-CU-2BC" firstAttribute="centerY" secondItem="tG6-jI-vDO" secondAttribute="centerY" id="iI2-yd-seo"/>
+                <constraint firstItem="bUU-WL-dFP" firstAttribute="leading" secondItem="Uqe-2C-Stf" secondAttribute="trailing" constant="2" id="k7Z-tp-vg2"/>
+                <constraint firstItem="qiy-J5-dl2" firstAttribute="leading" secondItem="ZQs-wG-xsY" secondAttribute="trailing" constant="3" id="kUf-vN-0Zz"/>
+                <constraint firstItem="diS-Pv-n3D" firstAttribute="top" secondItem="qiy-J5-dl2" secondAttribute="bottom" constant="2" id="kfs-00-3En"/>
+                <constraint firstItem="lva-wC-Pnt" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="ktb-Wi-24r"/>
+                <constraint firstItem="FS8-Gg-Uja" firstAttribute="centerY" secondItem="NwT-RV-PLE" secondAttribute="centerY" id="muk-UU-wUv"/>
+                <constraint firstItem="nrK-j9-F7e" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="nf9-Fg-tg3"/>
+                <constraint firstItem="Uqe-2C-Stf" firstAttribute="leading" secondItem="FS8-Gg-Uja" secondAttribute="trailing" constant="2" id="ngW-MV-3qf"/>
+                <constraint firstItem="Sgh-7S-z8j" firstAttribute="top" secondItem="MgT-do-Qmz" secondAttribute="bottom" constant="2" id="nwu-AP-njp"/>
+                <constraint firstItem="bUU-WL-dFP" firstAttribute="top" secondItem="diS-Pv-n3D" secondAttribute="bottom" constant="2" id="oYI-jV-8HD"/>
+                <constraint firstItem="YSx-1Y-cp6" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="plE-Hc-z8S"/>
+                <constraint firstItem="C1P-Qn-MaQ" firstAttribute="centerX" secondItem="MgT-do-Qmz" secondAttribute="centerX" id="qEp-Tq-Suv"/>
+                <constraint firstItem="nrK-j9-F7e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="qGl-hl-7Yf"/>
+                <constraint firstItem="9bf-mB-c9K" firstAttribute="centerX" secondItem="6EV-Tu-XZe" secondAttribute="centerX" id="qR4-yB-d65"/>
+                <constraint firstItem="Zh4-CU-2BC" firstAttribute="trailing" secondItem="tG6-jI-vDO" secondAttribute="leading" constant="-2" id="qhT-mZ-yar"/>
+                <constraint firstItem="nrK-j9-F7e" firstAttribute="centerY" secondItem="MgT-do-Qmz" secondAttribute="centerY" id="rFB-C9-7xp"/>
+                <constraint firstItem="oiz-Yn-o5w" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="rGT-Z2-O2W"/>
+                <constraint firstItem="bUU-WL-dFP" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="see-pY-L5m"/>
+                <constraint firstItem="NwT-RV-PLE" firstAttribute="leading" secondItem="tG6-jI-vDO" secondAttribute="trailing" constant="2" id="sfN-eW-06K"/>
+                <constraint firstItem="FS8-Gg-Uja" firstAttribute="width" secondItem="NwT-RV-PLE" secondAttribute="width" id="tAP-qh-6iZ"/>
+                <constraint firstItem="4pf-Gk-GkY" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="tZQ-y5-CuW"/>
+                <constraint firstItem="C1P-Qn-MaQ" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="u8I-L7-Sg4"/>
+                <constraint firstItem="Zh4-CU-2BC" firstAttribute="centerX" secondItem="MgT-do-Qmz" secondAttribute="centerX" id="wCz-rh-Fz1"/>
+                <constraint firstItem="NwT-RV-PLE" firstAttribute="top" secondItem="ZQs-wG-xsY" secondAttribute="bottom" constant="3" id="wTJ-9c-BJ9"/>
+                <constraint firstItem="qiy-J5-dl2" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="whL-tk-s4T"/>
+                <constraint firstItem="6EV-Tu-XZe" firstAttribute="centerY" secondItem="ZQs-wG-xsY" secondAttribute="centerY" constant="-15" id="wjN-Ir-v8S"/>
+                <constraint firstItem="2Ed-ck-xXS" firstAttribute="centerY" secondItem="nrK-j9-F7e" secondAttribute="centerY" id="xGa-lJ-lAl"/>
+                <constraint firstItem="MgT-do-Qmz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="xd6-HL-ukM"/>
+                <constraint firstItem="qiy-J5-dl2" firstAttribute="width" secondItem="Sgh-7S-z8j" secondAttribute="width" id="zIx-PJ-eeU"/>
+                <constraint firstItem="oiz-Yn-o5w" firstAttribute="height" secondItem="Sgh-7S-z8j" secondAttribute="height" id="zib-Hl-lGg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="centerBgImg" destination="ZQs-wG-xsY" id="yd2-qk-k9q"/>
+                <outlet property="centerGifShowImg" destination="6EV-Tu-XZe" id="8bF-ev-baf"/>
+                <outlet property="centerGiftName" destination="9bf-mB-c9K" id="t7U-AD-6KY"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="-185.49107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="game_RunViewBg" width="375" height="392"/>
+        <image name="game_centerNormalBg" width="208" height="166"/>
+        <image name="game_centerNormalIcon" width="92.5" height="127"/>
+    </resources>
+</document>

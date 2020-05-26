@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="ChartYouCell" customModule="LoveQiYi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="158.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱私欲君 2019-05-20 10:40:34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4G1-VQ-smn">
+                        <rect key="frame" x="15" y="125.5" width="189" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="7nr-6Q-B7q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-tA-NnN">
+                        <rect key="frame" x="15" y="100.5" width="15" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="kwl-s3-NTa"/>
+                            <constraint firstAttribute="height" constant="15" id="uhT-Lq-zgp"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-Zm-tBn">
+                        <rect key="frame" x="15" y="12" width="244.5" height="103.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刚买了个体验卡7天的，钱都转了，怎么还没有，还有看视频的时候卡的很，根本看不了" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atp-98-HmJ">
+                                <rect key="frame" x="15" y="10" width="214.5" height="83.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Atp-98-HmJ" secondAttribute="bottom" constant="10" id="08U-RV-6Sf"/>
+                            <constraint firstAttribute="trailing" secondItem="Atp-98-HmJ" secondAttribute="trailing" constant="15" id="NpT-je-Dyd"/>
+                            <constraint firstItem="Atp-98-HmJ" firstAttribute="top" secondItem="Jbt-Zm-tBn" secondAttribute="top" constant="10" id="YWh-kQ-Dq4"/>
+                            <constraint firstItem="Atp-98-HmJ" firstAttribute="leading" secondItem="Jbt-Zm-tBn" secondAttribute="leading" constant="15" id="jrK-xI-H0c"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="eeB-tA-NnN" firstAttribute="leading" secondItem="Jbt-Zm-tBn" secondAttribute="leading" id="3Dk-9G-ggl"/>
+                    <constraint firstItem="4G1-VQ-smn" firstAttribute="top" secondItem="Jbt-Zm-tBn" secondAttribute="bottom" constant="10" id="F93-j0-iTw"/>
+                    <constraint firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="Jbt-Zm-tBn" secondAttribute="trailing" constant="-60" id="J5o-VL-SdB"/>
+                    <constraint firstItem="4G1-VQ-smn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Rpj-Cw-D89"/>
+                    <constraint firstItem="Jbt-Zm-tBn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="W63-q6-rH7"/>
+                    <constraint firstItem="Jbt-Zm-tBn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ffv-Gb-v5w"/>
+                    <constraint firstAttribute="bottom" secondItem="4G1-VQ-smn" secondAttribute="bottom" constant="15" id="umw-vN-cdq"/>
+                    <constraint firstItem="Jbt-Zm-tBn" firstAttribute="bottom" secondItem="eeB-tA-NnN" secondAttribute="bottom" id="zj2-8B-to2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="container" destination="Jbt-Zm-tBn" id="gHe-Ib-Yaa"/>
+                <outlet property="contentlab" destination="Atp-98-HmJ" id="myg-4s-K4Q"/>
+                <outlet property="timelab" destination="4G1-VQ-smn" id="2ds-Yu-s48"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="108"/>
+        </tableViewCell>
+    </objects>
+</document>

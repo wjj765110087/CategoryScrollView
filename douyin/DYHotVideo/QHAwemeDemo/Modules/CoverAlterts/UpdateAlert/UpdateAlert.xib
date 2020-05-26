@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="UpdateAlert" id="iN0-l3-epB" customClass="UpdateAlert" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="752"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-h9-rx2">
+                    <rect key="frame" x="172.5" y="488" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="8is-b6-aPo"/>
+                        <constraint firstAttribute="height" constant="32" id="hpl-tq-Qqt"/>
+                    </constraints>
+                    <state key="normal" image="alertCloseBtn"/>
+                    <connections>
+                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Fx-1L-p03"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7Y-Ip-49F">
+                    <rect key="frame" x="43.5" y="229" width="290" height="234"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本更新啦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT4-Eq-Ch9">
+                            <rect key="frame" x="15" y="50" width="260" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Tkf-5Z-6Xb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新内容：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-JS-Pgc">
+                            <rect key="frame" x="15" y="82" width="260" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="MWI-ae-vuA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.新增用户上传动态.    2.用户可选择发图文和视频动态。   3.分享功能改版，可以分享不同内容到微信，QQ等社交平台。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdr-Vc-3ho">
+                            <rect key="frame" x="15" y="117" width="260" height="47"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YE-sj-6t2">
+                            <rect key="frame" x="152.5" y="184" width="127.5" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.48101128469999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="stZ-ow-uJ5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="立即更新"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="updateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1tY-Ws-4bK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-LQ-9Zg">
+                            <rect key="frame" x="10" y="184" width="127.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="qmu-OG-oQy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="官网升级">
+                                <color key="titleColor" red="0.0" green="0.48101128469999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="webBtnClickHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="55o-iR-6Hy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VT4-Eq-Ch9" firstAttribute="leading" secondItem="z7Y-Ip-49F" secondAttribute="leading" constant="15" id="BFT-qx-K4g"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="257" id="EFR-d9-Tu4"/>
+                        <constraint firstItem="bHa-JS-Pgc" firstAttribute="leading" secondItem="z7Y-Ip-49F" secondAttribute="leading" constant="15" id="EsQ-2I-Ggh"/>
+                        <constraint firstItem="3YE-sj-6t2" firstAttribute="width" secondItem="VwW-LQ-9Zg" secondAttribute="width" id="Ezr-cI-FJN"/>
+                        <constraint firstAttribute="bottom" secondItem="3YE-sj-6t2" secondAttribute="bottom" constant="10" id="F1S-2N-3FZ"/>
+                        <constraint firstItem="Bdr-Vc-3ho" firstAttribute="leading" secondItem="bHa-JS-Pgc" secondAttribute="leading" id="GcH-9k-ZEe"/>
+                        <constraint firstItem="3YE-sj-6t2" firstAttribute="top" secondItem="Bdr-Vc-3ho" secondAttribute="bottom" constant="20" id="Ghk-98-g1P"/>
+                        <constraint firstItem="VwW-LQ-9Zg" firstAttribute="leading" secondItem="z7Y-Ip-49F" secondAttribute="leading" constant="10" id="JAE-h0-BGQ"/>
+                        <constraint firstAttribute="trailing" secondItem="VT4-Eq-Ch9" secondAttribute="trailing" constant="15" id="KwY-h8-s3K"/>
+                        <constraint firstItem="Bdr-Vc-3ho" firstAttribute="top" secondItem="bHa-JS-Pgc" secondAttribute="bottom" constant="15" id="Lre-C6-r13"/>
+                        <constraint firstItem="3YE-sj-6t2" firstAttribute="centerY" secondItem="VwW-LQ-9Zg" secondAttribute="centerY" id="Zad-sl-owA"/>
+                        <constraint firstAttribute="trailing" secondItem="3YE-sj-6t2" secondAttribute="trailing" constant="10" id="bkB-ok-0XT"/>
+                        <constraint firstAttribute="trailing" secondItem="bHa-JS-Pgc" secondAttribute="trailing" constant="15" id="dBP-pa-Q6y"/>
+                        <constraint firstAttribute="trailing" secondItem="Bdr-Vc-3ho" secondAttribute="trailing" constant="15" id="des-6z-fWS"/>
+                        <constraint firstItem="3YE-sj-6t2" firstAttribute="leading" secondItem="VwW-LQ-9Zg" secondAttribute="trailing" constant="15" id="fWs-oh-Hlx"/>
+                        <constraint firstItem="VT4-Eq-Ch9" firstAttribute="top" secondItem="z7Y-Ip-49F" secondAttribute="top" constant="50" id="min-cS-exd"/>
+                        <constraint firstItem="bHa-JS-Pgc" firstAttribute="top" secondItem="VT4-Eq-Ch9" secondAttribute="bottom" constant="10" id="pdk-Ij-bhX"/>
+                        <constraint firstAttribute="width" constant="290" id="s6K-Vh-kRD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="updateVersion" translatesAutoresizingMaskIntoConstraints="NO" id="O3L-Cx-41o">
+                    <rect key="frame" x="143.5" y="184" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="aH8-FS-zY7"/>
+                        <constraint firstAttribute="width" constant="90" id="bIg-Kf-owO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hHV-h9-rx2" firstAttribute="centerX" secondItem="z7Y-Ip-49F" secondAttribute="centerX" id="Aom-Gh-p11"/>
+                <constraint firstItem="z7Y-Ip-49F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XR3-dE-Bix"/>
+                <constraint firstItem="hHV-h9-rx2" firstAttribute="top" secondItem="z7Y-Ip-49F" secondAttribute="bottom" constant="25" id="f3k-Lf-M00"/>
+                <constraint firstItem="z7Y-Ip-49F" firstAttribute="centerX" secondItem="O3L-Cx-41o" secondAttribute="centerX" id="sDf-pq-V1W"/>
+                <constraint firstItem="z7Y-Ip-49F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="vFq-82-NrM"/>
+                <constraint firstItem="z7Y-Ip-49F" firstAttribute="top" secondItem="O3L-Cx-41o" secondAttribute="bottom" constant="-45" id="yDx-n3-hwI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="alertContainView" destination="z7Y-Ip-49F" id="kaD-lX-xCp"/>
+                <outlet property="closeBtn" destination="hHV-h9-rx2" id="Vbj-XL-On5"/>
+                <outlet property="titleLable" destination="VT4-Eq-Ch9" id="5g0-rV-9LN"/>
+                <outlet property="updateBtn" destination="3YE-sj-6t2" id="xNP-k8-exr"/>
+                <outlet property="updateInfo" destination="Bdr-Vc-3ho" id="YN9-9I-9r3"/>
+                <outlet property="updateTitle" destination="bHa-JS-Pgc" id="cFp-RV-fgi"/>
+                <outlet property="webUpdateBtn" destination="VwW-LQ-9Zg" id="lfs-RC-BXl"/>
+            </connections>
+            <point key="canvasLocation" x="-359.19999999999999" y="102.54872563718142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertCloseBtn" width="32" height="32"/>
+        <image name="updateVersion" width="113" height="113"/>
+    </resources>
+</document>

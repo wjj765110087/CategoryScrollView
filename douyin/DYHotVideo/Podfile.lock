@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DouYinScan (0.1.0)
+  - DouYPlayer (0.2.5):
+    - SnapKit
+  - GPUImage (0.1.7)
+  - IQKeyboardManagerSwift (6.4.2)
+  - KeychainSwift (18.0.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.14.1)
+  - NicooNetwork (0.1.3):
+    - Alamofire
+    - YYCache
+  - SnapKit (4.0.1)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - DouYinScan
+  - DouYPlayer
+  - GPUImage
+  - IQKeyboardManagerSwift (~> 6.4.2)
+  - KeychainSwift
+  - MBProgressHUD (~> 1.1.0)
+  - MJRefresh (~> 3.1.14.1)
+  - NicooNetwork
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DouYinScan
+    - DouYPlayer
+    - GPUImage
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - MBProgressHUD
+    - MJRefresh
+    - NicooNetwork
+    - SnapKit
+    - YYCache
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DouYinScan: fa229d23120dc38c056ecfcbc74366b3f134f443
+  DouYPlayer: 73955012c5bc7bdba8a87ecdbddfe26547e9cc30
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  IQKeyboardManagerSwift: 79a3ec200dfb41cb66a89b8575417b5378107c5d
+  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
+  NicooNetwork: 6cd7992824d5be8270ac08c8730cc286bfe37905
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 49cfba915980b9edf19915ef3253438ccc3eaf73
+
+COCOAPODS: 1.8.4

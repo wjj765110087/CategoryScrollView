@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+
+<head>
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
+    <style>
+         *{
+          -webkit-touch-callout:none;
+          -webkit-user-select:none;
+          -khtml-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;
+          user-select:none;
+        }
+        input,textarea {
+          -webkit-user-select:auto;
+          margin: 0px;
+          padding: 0px;
+          outline: none;
+        }
+        html,
+        body {
+            /* width: 100%; */
+            /* height: 100%;
+            margin: 0; */
+            background-color: rgb(16, 18, 29)
+        }
+
+        body {
+            margin: 18px;
+        }
+
+        .title {
+            color: rgb(0, 123, 255);
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .content_title {
+            color: rgb(222, 222, 222);
+            font-size: 16px;
+            line-height: 21px;
+            margin-top: 26px;
+            letter-spacing: 0.08px;
+        }
+
+        .content_sub {
+            color: rgb(117, 119, 124);
+            font-size: 14px;
+            margin-top: 18.5px;
+            line-height: 25px;
+        }
+
+        .bottom_desc {
+            color: rgb(0, 123, 255);
+            font-size: 14px;
+            line-height: 25px;
+            margin-top: 30px;
+            letter-spacing: -0.14px;
+        }
+
+        .btn {
+            background-color: rgb(0, 123, 255);
+            font-size: 14px;
+            margin-top: 30px;
+            line-height: 42px;
+            margin-left: 10px;
+            height: 42px;
+            text-align: center;
+            margin-right: 10px;
+            color: rgb(255, 255, 255);
+            margin-bottom: 10px;
+            letter-spacing: -0.14px;
+            border-radius: 21px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        抖阴为抖友开启上传原创及第三方成人生活小视频分享通道，现对视频内容及上传做如下说明：
+    </div>
+    <div class="content_title">
+        视频内容要求：
+    </div>
+    <div class="content_sub">
+        1.视频内容需为成人原创生活视频或第三方成人生活视频<br />
+        2.禁止上传未成年、兽交及真实强奸类视频<br />
+        3.禁止上传偷录（如酒店、cf、qq聊天、厕所、裙底）等侵犯他人隐私的视频<br />
+        4.禁止在视频内添加任何个人联系方式及其他插入性广告<br />
+        5.视频中当事人均需为18岁以上,且他（她）们同意该视频被传播分享<br />
+        6.视频内容需在5分钟以内,超出部分上传时将被裁减<br />
+        7.为加强隐私保护,可对视频中人物面部等进行遮挡或打马<br />
+        8.视频内容为竖屏且符合内容要求的将优先审核<br />
+    </div>
+
+    <div class="content_title">
+        上传规则及要求：
+    </div>
+    <div class="content_sub">
+        1.新用户首次上传需提交视频样品及个人信息、联系方式等进行权限申请<br />
+        2.上传权限申请周期为24小时，申请通过后会拥有每日3次视频上传次数<br />
+        3.每人拥有2次上传权限申请机会，请按照视频要求上传视频，否则将永久关闭上传入口<br />
+        4.抖阴会对所有上传的视频进行内容审核，审核周期为24小时，通过后视频内容可在首页展示，届时请前往我的~作品查看审核进度<br />
+        5.个人上传的视频内容可在 ‘ 我的~作品 ’ 进行删除管理
+    </div>
+
+
+    <div class="content_title">
+        视频上传违规的处理办法：
+    </div>
+    <div class="content_sub">
+        1.上传视频内容不符合内容要求的审核不通过，连续三次不通过的，将永久禁止上传<br/>
+        2.在视频任意位置，添加联系方式或插入广告的，不予审核，情形严重者，将永久禁止上传
+    </div>
+
+    <div class="bottom_desc">
+        温馨提示：<br />
+        抖阴将不定期对本须知进行补充调整，请各位抖友及时关注调整动态，避免违规，本须知所有内容的最终解释权归抖阴所有
+    </div>
+
+
+    <div class="btn" onclick="clickHadRead()">
+            已阅读,前往申请
+    </div>
+
+    <script type="text/javascript">
+
+    function clickHadRead(){
+        try {
+            webkit.messageHandlers.JSListener.postMessage("license")
+        }catch(error){
+            console.error('The native context not exist ')
+        }
+    }
+    </script>
+</body>
+
+</html>

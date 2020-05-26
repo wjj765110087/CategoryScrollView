@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VipCardUpAlert" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guiBingVipAlertBg" translatesAutoresizingMaskIntoConstraints="NO" id="QHQ-i4-Jyf">
+                    <rect key="frame" x="56" y="121.5" width="263" height="364"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="364" id="Jg7-IF-fmb"/>
+                        <constraint firstAttribute="width" constant="263" id="vTQ-rg-CCZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W5-lc-LQX">
+                    <rect key="frame" x="171.5" y="515.5" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="SZ9-SG-2xm"/>
+                        <constraint firstAttribute="width" constant="32" id="TZC-rp-yJX"/>
+                    </constraints>
+                    <state key="normal" image="alertCloseBtn"/>
+                    <connections>
+                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="qHL-Ec-kIz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpk-nB-RnL">
+                    <rect key="frame" x="90" y="410.5" width="195" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="195" id="dEm-PI-JvJ"/>
+                        <constraint firstAttribute="height" constant="55" id="flJ-4U-7do"/>
+                    </constraints>
+                    <state key="normal" image="cardCommitBtn"/>
+                    <connections>
+                        <action selector="commitAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="42g-Ss-SS8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无限观看天数165天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-Te-FJm">
+                    <rect key="frame" x="121.5" y="365.5" width="132.5" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="j3K-ru-n95"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pLogolAlert" translatesAutoresizingMaskIntoConstraints="NO" id="95w-kc-q59">
+                    <rect key="frame" x="158.5" y="245.5" width="58" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="Xt5-Ml-WOZ"/>
+                        <constraint firstAttribute="height" constant="76" id="yKL-hf-gCD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guiBingAlertName" translatesAutoresizingMaskIntoConstraints="NO" id="6gV-5G-P1x">
+                    <rect key="frame" x="112.5" y="146.5" width="150" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="awD-MD-oLh"/>
+                        <constraint firstAttribute="height" constant="61" id="gVP-5i-P8U"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2W5-lc-LQX" firstAttribute="centerX" secondItem="QHQ-i4-Jyf" secondAttribute="centerX" id="3QW-tG-07q"/>
+                <constraint firstItem="VZe-Te-FJm" firstAttribute="centerX" secondItem="95w-kc-q59" secondAttribute="centerX" id="FbN-6U-Dee"/>
+                <constraint firstItem="Dpk-nB-RnL" firstAttribute="centerX" secondItem="QHQ-i4-Jyf" secondAttribute="centerX" id="KH7-Ge-PRx"/>
+                <constraint firstItem="95w-kc-q59" firstAttribute="centerY" secondItem="QHQ-i4-Jyf" secondAttribute="centerY" constant="-20" id="LnN-AV-oPh"/>
+                <constraint firstItem="Dpk-nB-RnL" firstAttribute="bottom" secondItem="QHQ-i4-Jyf" secondAttribute="bottom" constant="-20" id="NAb-pT-xGB"/>
+                <constraint firstItem="6gV-5G-P1x" firstAttribute="centerX" secondItem="QHQ-i4-Jyf" secondAttribute="centerX" id="SL9-ab-09s"/>
+                <constraint firstItem="QHQ-i4-Jyf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tg1-HK-mh2"/>
+                <constraint firstItem="QHQ-i4-Jyf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="TtQ-GU-48u"/>
+                <constraint firstItem="Dpk-nB-RnL" firstAttribute="top" secondItem="VZe-Te-FJm" secondAttribute="bottom" constant="20" id="bXR-qn-Aev"/>
+                <constraint firstItem="Dpk-nB-RnL" firstAttribute="centerX" secondItem="VZe-Te-FJm" secondAttribute="centerX" id="n2W-Wg-vyl"/>
+                <constraint firstItem="6gV-5G-P1x" firstAttribute="top" secondItem="QHQ-i4-Jyf" secondAttribute="top" constant="25" id="nMb-nD-bZu"/>
+                <constraint firstItem="2W5-lc-LQX" firstAttribute="top" secondItem="QHQ-i4-Jyf" secondAttribute="bottom" constant="30" id="wL6-8q-RfL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardBgImage" destination="QHQ-i4-Jyf" id="ljL-tj-t2d"/>
+                <outlet property="cardLogolImage" destination="95w-kc-q59" id="Qdf-CV-gJW"/>
+                <outlet property="cardNameImage" destination="6gV-5G-P1x" id="Kme-Pi-Mfu"/>
+                <outlet property="cardValueInfo" destination="VZe-Te-FJm" id="PrF-8t-F3U"/>
+                <outlet property="closeBtn" destination="2W5-lc-LQX" id="dr1-zD-Bry"/>
+                <outlet property="commitBtn" destination="Dpk-nB-RnL" id="OPY-sQ-KTV"/>
+            </connections>
+            <point key="canvasLocation" x="-182" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertCloseBtn" width="32" height="32"/>
+        <image name="cardCommitBtn" width="195" height="55"/>
+        <image name="guiBingAlertName" width="150" height="61"/>
+        <image name="guiBingVipAlertBg" width="263" height="364"/>
+        <image name="pLogolAlert" width="58" height="76"/>
+    </resources>
+</document>

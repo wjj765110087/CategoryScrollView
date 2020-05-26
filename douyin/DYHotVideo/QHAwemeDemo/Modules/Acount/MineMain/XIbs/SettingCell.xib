@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="108" id="KGk-i7-Jjw" customClass="SettingCell" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feU-cJ-RUM">
+                        <rect key="frame" x="370.5" y="46" width="19.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verbPhoneIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nDF-hP-95K">
+                        <rect key="frame" x="15" y="45" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="4yp-fi-5cL"/>
+                            <constraint firstAttribute="width" constant="18" id="WVm-Km-bXZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定手机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONN-aG-V5n">
+                        <rect key="frame" x="48" y="45.5" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wWN-6B-mL1">
+                        <rect key="frame" x="341" y="38.5" width="51" height="31"/>
+                        <color key="onTintColor" red="0.10982102278160723" green="0.12948604846653872" blue="0.16908365120626476" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <action selector="switchValueChange:" destination="KGk-i7-Jjw" eventType="valueChanged" id="MJg-Ni-hh7"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wWN-6B-mL1" secondAttribute="trailing" constant="15" id="14V-DR-nyZ"/>
+                    <constraint firstAttribute="trailing" secondItem="feU-cJ-RUM" secondAttribute="trailing" constant="15" id="5PA-jP-dcg"/>
+                    <constraint firstItem="ONN-aG-V5n" firstAttribute="leading" secondItem="nDF-hP-95K" secondAttribute="trailing" constant="15" id="JyU-OW-eZK"/>
+                    <constraint firstItem="ONN-aG-V5n" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Oyc-kk-V6D"/>
+                    <constraint firstItem="nDF-hP-95K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Uig-g0-sVq"/>
+                    <constraint firstItem="nDF-hP-95K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oQ6-gH-qi5"/>
+                    <constraint firstItem="feU-cJ-RUM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="shE-Rz-IIw"/>
+                    <constraint firstItem="wWN-6B-mL1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tH2-PO-JZr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImage" destination="nDF-hP-95K" id="vPB-rw-Nik"/>
+                <outlet property="msglab" destination="feU-cJ-RUM" id="w49-u6-DRu"/>
+                <outlet property="swichBtn" destination="wWN-6B-mL1" id="Gfy-67-5Si"/>
+                <outlet property="titleLab" destination="ONN-aG-V5n" id="ZTa-2w-Xks"/>
+            </connections>
+            <point key="canvasLocation" x="47.200000000000003" y="155.62218890554723"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="verbPhoneIcon.png" width="11" height="16"/>
+    </resources>
+</document>

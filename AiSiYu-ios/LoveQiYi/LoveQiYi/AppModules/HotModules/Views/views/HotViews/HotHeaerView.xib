@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bxr-8g-DEy" customClass="HotHeaerView" customModule="LoveQiYi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="invalidLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8l4-ls-ejo">
+                    <rect key="frame" x="11" y="13.5" width="56" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="8Vt-Xt-KcW"/>
+                        <constraint firstAttribute="width" constant="56" id="xq0-yk-d69"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="欢迎来到爱私欲，新用户登录即送免费3天无限看片。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3T-NO-gcQ" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                    <rect key="frame" x="119.5" y="14.5" width="238.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="labelize" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-zs-PSn">
+                    <rect key="frame" x="78.5" y="14.5" width="36" height="16"/>
+                    <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="P2f-bh-cXr"/>
+                        <constraint firstAttribute="height" constant="16" id="e6j-Ii-83l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="1" green="0.16470588235294117" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-yZ-CiK">
+                    <rect key="frame" x="0.0" y="0.0" width="386" height="45"/>
+                    <connections>
+                        <action selector="bgButton:" destination="bxr-8g-DEy" eventType="touchUpInside" id="wQD-Nf-K4o"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indecator" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-a3-K7M">
+                    <rect key="frame" x="367" y="18.5" width="4" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="gpr-8J-JWc"/>
+                        <constraint firstAttribute="height" constant="8" id="wGF-oa-baQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="r7d-zs-PSn" firstAttribute="centerY" secondItem="8l4-ls-ejo" secondAttribute="centerY" id="2YB-cF-sn1"/>
+                <constraint firstItem="jS4-5G-TYc" firstAttribute="bottom" secondItem="e3h-yZ-CiK" secondAttribute="bottom" id="4N0-QG-PYx"/>
+                <constraint firstItem="r7d-zs-PSn" firstAttribute="leading" secondItem="8l4-ls-ejo" secondAttribute="trailing" constant="11.5" id="590-v4-7qP"/>
+                <constraint firstItem="jS4-5G-TYc" firstAttribute="trailing" secondItem="e3h-yZ-CiK" secondAttribute="trailing" id="FSW-oY-Abj"/>
+                <constraint firstItem="b9P-a3-K7M" firstAttribute="centerY" secondItem="f3T-NO-gcQ" secondAttribute="centerY" id="T3U-mE-ceK"/>
+                <constraint firstItem="8l4-ls-ejo" firstAttribute="leading" secondItem="jS4-5G-TYc" secondAttribute="leading" constant="11" id="T79-Kl-UMI"/>
+                <constraint firstItem="f3T-NO-gcQ" firstAttribute="centerY" secondItem="r7d-zs-PSn" secondAttribute="centerY" id="U14-xC-zDM"/>
+                <constraint firstItem="jS4-5G-TYc" firstAttribute="trailing" secondItem="b9P-a3-K7M" secondAttribute="trailing" constant="15" id="h9L-Pk-aZE"/>
+                <constraint firstItem="f3T-NO-gcQ" firstAttribute="leading" secondItem="r7d-zs-PSn" secondAttribute="trailing" constant="5" id="iMb-Om-OCa"/>
+                <constraint firstItem="e3h-yZ-CiK" firstAttribute="top" secondItem="jS4-5G-TYc" secondAttribute="top" id="kTZ-46-5XT"/>
+                <constraint firstItem="e3h-yZ-CiK" firstAttribute="leading" secondItem="jS4-5G-TYc" secondAttribute="leading" id="lHW-Ge-gWb"/>
+                <constraint firstItem="b9P-a3-K7M" firstAttribute="leading" secondItem="f3T-NO-gcQ" secondAttribute="trailing" constant="9" id="wvU-V6-aTR"/>
+                <constraint firstItem="8l4-ls-ejo" firstAttribute="centerY" secondItem="bxr-8g-DEy" secondAttribute="centerY" id="zQ5-VX-T5S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="jS4-5G-TYc"/>
+            <connections>
+                <outlet property="bgButton" destination="e3h-yZ-CiK" id="qm1-Rw-LWk"/>
+                <outlet property="logoImgView" destination="8l4-ls-ejo" id="nfM-xI-Ooh"/>
+                <outlet property="tipLab" destination="f3T-NO-gcQ" id="BtS-Dn-1rs"/>
+            </connections>
+            <point key="canvasLocation" x="940.79999999999995" y="-284.70764617691157"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="indecator" width="4" height="8"/>
+        <image name="invalidLogo" width="56" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="MyFeedCell" customModule="DouCartoonDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjf-39-mql">
+                        <rect key="frame" x="20" y="8" width="293" height="76.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-j4-kzB">
+                                <rect key="frame" x="12" y="45" width="269" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已成功购买7天体验卡一张，即刻无限观的奥迪...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSH-yU-Vqs">
+                                <rect key="frame" x="12" y="15" width="269" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="oir-Om-0oO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f7Q-j4-kzB" firstAttribute="leading" secondItem="MSH-yU-Vqs" secondAttribute="leading" id="CB4-Oh-kGP"/>
+                            <constraint firstItem="MSH-yU-Vqs" firstAttribute="top" secondItem="jjf-39-mql" secondAttribute="top" constant="15" id="TLe-rV-fIc"/>
+                            <constraint firstItem="f7Q-j4-kzB" firstAttribute="top" secondItem="MSH-yU-Vqs" secondAttribute="bottom" constant="10" id="abk-Ro-flS"/>
+                            <constraint firstItem="f7Q-j4-kzB" firstAttribute="trailing" secondItem="MSH-yU-Vqs" secondAttribute="trailing" id="jjY-Yb-kvF"/>
+                            <constraint firstItem="MSH-yU-Vqs" firstAttribute="leading" secondItem="jjf-39-mql" secondAttribute="leading" constant="12" id="vRQ-fG-ifh"/>
+                            <constraint firstAttribute="trailing" secondItem="MSH-yU-Vqs" secondAttribute="trailing" constant="12" id="xSm-xD-Jfd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jjf-39-mql" secondAttribute="trailing" constant="20" id="8Ie-0J-Ubh"/>
+                    <constraint firstItem="jjf-39-mql" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9n7-Sd-Ioy"/>
+                    <constraint firstItem="jjf-39-mql" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BBP-Ta-BBB"/>
+                    <constraint firstAttribute="bottom" secondItem="jjf-39-mql" secondAttribute="bottom" constant="8" id="SqA-r9-fSM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shodowView" destination="jjf-39-mql" id="cNZ-l7-bEh"/>
+                <outlet property="timelab" destination="f7Q-j4-kzB" id="R6n-Yv-ZiC"/>
+                <outlet property="titlelab" destination="MSH-yU-Vqs" id="L6g-fA-gww"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="168"/>
+        </tableViewCell>
+    </objects>
+</document>

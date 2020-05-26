@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZAF-SA-qFx" customClass="HotDetailFooterView" customModule="LoveQiYi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKP-tO-bZO">
+                    <rect key="frame" x="40" y="10" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="YqW-DQ-35f"/>
+                        <constraint firstAttribute="height" constant="40" id="tAw-vq-Jiz"/>
+                    </constraints>
+                    <state key="normal" image="downLoaderVideo"/>
+                    <connections>
+                        <action selector="didClickBtn:" destination="ZAF-SA-qFx" eventType="touchUpInside" id="eMM-c4-qff"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-D3-rwq">
+                    <rect key="frame" x="265" y="10" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="1mE-qa-9JO"/>
+                        <constraint firstAttribute="height" constant="40" id="Tuh-5T-QUH"/>
+                    </constraints>
+                    <state key="normal" image="share"/>
+                    <connections>
+                        <action selector="didClickBtn:" destination="ZAF-SA-qFx" eventType="touchUpInside" id="yK9-jZ-DK9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-pV-syY">
+                    <rect key="frame" x="152.5" y="10" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wal-fQ-QIq"/>
+                        <constraint firstAttribute="width" constant="70" id="ypa-7y-xdv"/>
+                    </constraints>
+                    <state key="normal" image="like"/>
+                    <state key="selected" image="RedHeart"/>
+                    <connections>
+                        <action selector="didClickBtn:" destination="ZAF-SA-qFx" eventType="touchUpInside" id="cha-dl-bRT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gKP-tO-bZO" firstAttribute="leading" secondItem="lMa-ji-M63" secondAttribute="leading" constant="40" id="1bW-C9-Mnn"/>
+                <constraint firstItem="gKP-tO-bZO" firstAttribute="centerY" secondItem="ZAF-SA-qFx" secondAttribute="centerY" id="9f0-aW-K5O"/>
+                <constraint firstItem="gSc-D3-rwq" firstAttribute="centerY" secondItem="ZAF-SA-qFx" secondAttribute="centerY" id="QB2-uZ-gAK"/>
+                <constraint firstItem="tWQ-pV-syY" firstAttribute="centerY" secondItem="ZAF-SA-qFx" secondAttribute="centerY" id="ZvZ-Hd-URH"/>
+                <constraint firstItem="lMa-ji-M63" firstAttribute="trailing" secondItem="gSc-D3-rwq" secondAttribute="trailing" constant="40" id="kwg-J1-3Uv"/>
+                <constraint firstItem="tWQ-pV-syY" firstAttribute="centerX" secondItem="ZAF-SA-qFx" secondAttribute="centerX" id="svC-K9-D43"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lMa-ji-M63"/>
+            <connections>
+                <outlet property="downLoadBtn" destination="gKP-tO-bZO" id="kqZ-NQ-thM"/>
+                <outlet property="likeBtn" destination="tWQ-pV-syY" id="Bng-Sh-QGC"/>
+                <outlet property="shareBtn" destination="gSc-D3-rwq" id="J3T-Zg-7nR"/>
+            </connections>
+            <point key="canvasLocation" x="88.799999999999997" y="-195.20239880059972"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RedHeart" width="28" height="27"/>
+        <image name="downLoaderVideo" width="26" height="26"/>
+        <image name="like" width="28" height="27"/>
+        <image name="share" width="25" height="25"/>
+    </resources>
+</document>

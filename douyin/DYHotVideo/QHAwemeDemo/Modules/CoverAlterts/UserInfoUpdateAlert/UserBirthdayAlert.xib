@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nfm-bv-sNw" customClass="UserBirthdayAlert" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-aJ-zdr">
+                    <rect key="frame" x="27.5" y="467" width="320" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfR-z8-IWV">
+                            <rect key="frame" x="20" y="14" width="80" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="O6H-U9-hIR"/>
+                                <constraint firstAttribute="height" constant="30" id="bhJ-gR-6vj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.12941176469999999" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancel:" destination="nfm-bv-sNw" eventType="touchUpInside" id="TXL-d0-PJZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfm-SS-6iG">
+                            <rect key="frame" x="222" y="14" width="80" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Pge-2p-n5V"/>
+                                <constraint firstAttribute="height" constant="30" id="zCK-u6-lyP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.15686274510000001" green="0.49019607840000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sure:" destination="nfm-bv-sNw" eventType="touchUpInside" id="7Yn-lU-To8"/>
+                            </connections>
+                        </button>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="NU4-Oy-3QX">
+                            <rect key="frame" x="0.0" y="59" width="320" height="141"/>
+                            <date key="maximumDate" timeIntervalSinceReferenceDate="599482800">
+                                <!--2019-12-31 11:00:00 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="didSelectBirthday:" destination="nfm-bv-sNw" eventType="valueChanged" id="IYd-CT-jwa"/>
+                            </connections>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FfR-z8-IWV" firstAttribute="leading" secondItem="KR8-aJ-zdr" secondAttribute="leading" constant="20" id="0hi-xQ-4N3"/>
+                        <constraint firstItem="FfR-z8-IWV" firstAttribute="top" secondItem="KR8-aJ-zdr" secondAttribute="top" constant="14" id="0zE-C0-QWh"/>
+                        <constraint firstItem="NU4-Oy-3QX" firstAttribute="leading" secondItem="KR8-aJ-zdr" secondAttribute="leading" id="2SB-RA-KCh"/>
+                        <constraint firstAttribute="bottom" secondItem="NU4-Oy-3QX" secondAttribute="bottom" id="6Sr-Sc-rEA"/>
+                        <constraint firstItem="NU4-Oy-3QX" firstAttribute="top" secondItem="FfR-z8-IWV" secondAttribute="bottom" constant="15" id="MN9-wZ-hCq"/>
+                        <constraint firstItem="Hfm-SS-6iG" firstAttribute="top" secondItem="KR8-aJ-zdr" secondAttribute="top" constant="14" id="WyR-gI-Am3"/>
+                        <constraint firstAttribute="height" constant="200" id="cPO-TQ-F7F"/>
+                        <constraint firstAttribute="trailing" secondItem="Hfm-SS-6iG" secondAttribute="trailing" constant="18" id="fNq-QF-HWm"/>
+                        <constraint firstAttribute="trailing" secondItem="NU4-Oy-3QX" secondAttribute="trailing" id="peY-86-yCx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ou2-ro-TZU" firstAttribute="bottom" secondItem="KR8-aJ-zdr" secondAttribute="bottom" id="2lM-Kn-RvI"/>
+                <constraint firstItem="KR8-aJ-zdr" firstAttribute="centerX" secondItem="nfm-bv-sNw" secondAttribute="centerX" id="Xhe-Op-bYC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ou2-ro-TZU"/>
+            <connections>
+                <outlet property="datePicker" destination="NU4-Oy-3QX" id="cuM-LH-dlB"/>
+                <outlet property="popView" destination="KR8-aJ-zdr" id="UI3-dX-oYF"/>
+            </connections>
+            <point key="canvasLocation" x="-140" y="121.88905547226388"/>
+        </view>
+    </objects>
+</document>

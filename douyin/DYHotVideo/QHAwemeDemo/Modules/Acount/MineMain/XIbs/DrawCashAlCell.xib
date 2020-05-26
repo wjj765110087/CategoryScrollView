@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="DrawCashAlCell" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="121.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw7-eY-Qgd">
+                        <rect key="frame" x="15" y="20" width="31" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gCN-BD-thB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝账号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RF-Zm-JPT">
+                        <rect key="frame" x="15" y="80" width="77" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="qVS-sq-2R7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入姓名" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIy-dg-3TM">
+                        <rect key="frame" x="61" y="10" width="291" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7Cf-kI-Y3C"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入支付宝账号" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4V-HZ-7rN">
+                        <rect key="frame" x="107" y="70" width="245" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ERf-TF-gwp"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIx-tJ-Iqs">
+                        <rect key="frame" x="15" y="60" width="337" height="0.5"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1215686275" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="6oY-iJ-1zH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bw7-eY-Qgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EWH-oL-hyf"/>
+                    <constraint firstItem="D4V-HZ-7rN" firstAttribute="trailing" secondItem="AIy-dg-3TM" secondAttribute="trailing" id="Ffr-qw-ON0"/>
+                    <constraint firstItem="AIy-dg-3TM" firstAttribute="trailing" secondItem="XIx-tJ-Iqs" secondAttribute="trailing" id="FnD-mH-1Ev"/>
+                    <constraint firstItem="XIx-tJ-Iqs" firstAttribute="leading" secondItem="bw7-eY-Qgd" secondAttribute="leading" id="Ims-iB-3W2"/>
+                    <constraint firstItem="D4V-HZ-7rN" firstAttribute="centerY" secondItem="8RF-Zm-JPT" secondAttribute="centerY" id="Jis-Z2-4BF"/>
+                    <constraint firstItem="bw7-eY-Qgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="LXr-zl-Kuh"/>
+                    <constraint firstItem="8RF-Zm-JPT" firstAttribute="leading" secondItem="bw7-eY-Qgd" secondAttribute="leading" id="Q5f-GL-Odc"/>
+                    <constraint firstItem="XIx-tJ-Iqs" firstAttribute="top" secondItem="bw7-eY-Qgd" secondAttribute="bottom" constant="20" id="VoF-S1-FG0"/>
+                    <constraint firstItem="8RF-Zm-JPT" firstAttribute="top" secondItem="XIx-tJ-Iqs" secondAttribute="top" constant="20" id="de1-8D-Uys"/>
+                    <constraint firstAttribute="trailing" secondItem="AIy-dg-3TM" secondAttribute="trailing" constant="18" id="ncq-PU-6Vu"/>
+                    <constraint firstItem="D4V-HZ-7rN" firstAttribute="leading" secondItem="8RF-Zm-JPT" secondAttribute="trailing" constant="15" id="oyy-cu-e4C"/>
+                    <constraint firstItem="AIy-dg-3TM" firstAttribute="centerY" secondItem="bw7-eY-Qgd" secondAttribute="centerY" id="u5h-he-ecF"/>
+                    <constraint firstItem="AIy-dg-3TM" firstAttribute="leading" secondItem="bw7-eY-Qgd" secondAttribute="trailing" constant="15" id="yaF-bw-eqU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="alipayTf" destination="D4V-HZ-7rN" id="6Dy-zw-aNG"/>
+                <outlet property="nameTf" destination="AIy-dg-3TM" id="l52-yz-489"/>
+            </connections>
+            <point key="canvasLocation" x="172.80000000000001" y="189.80509745127438"/>
+        </tableViewCell>
+    </objects>
+</document>

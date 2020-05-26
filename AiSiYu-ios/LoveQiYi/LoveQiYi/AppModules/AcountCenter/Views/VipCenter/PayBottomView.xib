@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayBottomView" customModule="LoveQiYi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-Ps-fBf">
+                    <rect key="frame" x="219" y="0.0" width="99" height="54"/>
+                    <color key="backgroundColor" red="0.34431968130000001" green="0.34361438620000001" blue="0.34841581849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="FIN-rG-g9P"/>
+                    </constraints>
+                    <state key="normal" title="立即付款">
+                        <color key="titleColor" red="0.995849609375" green="0.64192708333333337" blue="0.36279296875" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="payAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="UQ2-KJ-os4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应付：0.00元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koC-gp-R33">
+                    <rect key="frame" x="20" y="0.0" width="199" height="54"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yxL-Ps-fBf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="29k-in-uaP"/>
+                <constraint firstAttribute="trailing" secondItem="yxL-Ps-fBf" secondAttribute="trailing" id="5mQ-Lj-7JX"/>
+                <constraint firstAttribute="bottom" secondItem="yxL-Ps-fBf" secondAttribute="bottom" id="6ay-mx-cKD"/>
+                <constraint firstItem="yxL-Ps-fBf" firstAttribute="leading" secondItem="koC-gp-R33" secondAttribute="trailing" id="X9Z-GE-ogM"/>
+                <constraint firstItem="koC-gp-R33" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZUf-wT-voI"/>
+                <constraint firstAttribute="bottom" secondItem="koC-gp-R33" secondAttribute="bottom" id="cCT-bk-yyq"/>
+                <constraint firstItem="koC-gp-R33" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dpq-8P-tnw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="payBtn" destination="yxL-Ps-fBf" id="WHx-E8-WVS"/>
+                <outlet property="priceLable" destination="koC-gp-R33" id="mxX-o6-g71"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="29"/>
+        </view>
+    </objects>
+</document>

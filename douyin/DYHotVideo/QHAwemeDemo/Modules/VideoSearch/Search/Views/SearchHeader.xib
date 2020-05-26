@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeader" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-CA-Aof">
+                    <rect key="frame" x="0.0" y="0.0" width="426" height="94"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-Dg-vd4">
+                            <rect key="frame" x="15" y="53" width="346" height="36"/>
+                            <color key="backgroundColor" red="0.110262178712421" green="0.10267311996883816" blue="0.11459695961740282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="rlr-UA-Uwi"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="communitySeachIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gWV-Zi-fwU">
+                            <rect key="frame" x="25" y="63" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="HyF-u5-hHe"/>
+                                <constraint firstAttribute="width" constant="16" id="oeN-5K-ghJ"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索用户/视频/话题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6A-MJ-X9E">
+                            <rect key="frame" x="51" y="53.5" width="310" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="qEq-Ok-xjK"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJW-CP-lSD">
+                            <rect key="frame" x="366" y="55" width="45" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="84e-di-cqz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancleAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="P3H-x5-psV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rJW-CP-lSD" firstAttribute="leading" secondItem="b6A-MJ-X9E" secondAttribute="trailing" constant="5" id="6zn-GE-f7f"/>
+                        <constraint firstItem="b6A-MJ-X9E" firstAttribute="centerY" secondItem="gWV-Zi-fwU" secondAttribute="centerY" id="HH9-LA-yzo"/>
+                        <constraint firstItem="b6A-MJ-X9E" firstAttribute="leading" secondItem="gWV-Zi-fwU" secondAttribute="trailing" constant="10" id="VRg-kW-ST8"/>
+                        <constraint firstAttribute="trailing" secondItem="rJW-CP-lSD" secondAttribute="trailing" constant="15" id="X8u-ef-BYv"/>
+                        <constraint firstItem="rJW-CP-lSD" firstAttribute="leading" secondItem="oKg-Dg-vd4" secondAttribute="trailing" constant="5" id="gQO-zb-kqc"/>
+                        <constraint firstItem="gWV-Zi-fwU" firstAttribute="leading" secondItem="LBG-CA-Aof" secondAttribute="leading" constant="25" id="jTr-EY-tuP"/>
+                        <constraint firstItem="rJW-CP-lSD" firstAttribute="centerY" secondItem="oKg-Dg-vd4" secondAttribute="centerY" id="ljb-Hy-obD"/>
+                        <constraint firstItem="oKg-Dg-vd4" firstAttribute="centerY" secondItem="gWV-Zi-fwU" secondAttribute="centerY" id="qf5-wX-I9S"/>
+                        <constraint firstItem="oKg-Dg-vd4" firstAttribute="leading" secondItem="LBG-CA-Aof" secondAttribute="leading" constant="15" id="rwf-eb-B7Q"/>
+                        <constraint firstAttribute="bottom" secondItem="oKg-Dg-vd4" secondAttribute="bottom" constant="5" id="sgw-kS-IrM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LBG-CA-Aof" secondAttribute="bottom" id="85B-7z-mmt"/>
+                <constraint firstAttribute="trailing" secondItem="LBG-CA-Aof" secondAttribute="trailing" id="QGY-MA-LtR"/>
+                <constraint firstItem="LBG-CA-Aof" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QeY-gX-Zs7"/>
+                <constraint firstItem="LBG-CA-Aof" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ts9-zi-xsg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="barView" destination="LBG-CA-Aof" id="i5o-sX-DWU"/>
+                <outlet property="cancleBtn" destination="rJW-CP-lSD" id="iL3-SH-fmf"/>
+                <outlet property="grayFakeView" destination="oKg-Dg-vd4" id="bry-SN-wYa"/>
+                <outlet property="searchTf" destination="b6A-MJ-X9E" id="Bc1-ea-Ywp"/>
+            </connections>
+            <point key="canvasLocation" x="-3.2000000000000002" y="51.27436281859071"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="communitySeachIcon" width="14" height="14"/>
+    </resources>
+</document>

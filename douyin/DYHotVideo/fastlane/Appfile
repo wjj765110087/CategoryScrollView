@@ -1,0 +1,6 @@
+app_identifier("com.Dy.douyVideoW") # The bundle identifier of your app
+apple_id("yjl6d6@163.com") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

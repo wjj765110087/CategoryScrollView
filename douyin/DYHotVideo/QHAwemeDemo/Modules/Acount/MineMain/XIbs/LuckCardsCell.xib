@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="LuckCardsCell" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4E-z4-wQh">
+                        <rect key="frame" x="20" y="11" width="437" height="112.5"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luckCardFailed.png" translatesAutoresizingMaskIntoConstraints="NO" id="7ED-Om-T1b">
+                                <rect key="frame" x="0.0" y="0.0" width="437" height="112.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igz-DO-zDh">
+                                <rect key="frame" x="20" y="40.5" width="32.5" height="31.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="折" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VQ-hu-QQA">
+                                <rect key="frame" x="55.5" y="53.5" width="12.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARk-DR-AhP">
+                                <rect key="frame" x="100" y="0.0" width="1" height="112.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="aAV-lG-pb2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-HD-xhv">
+                                <rect key="frame" x="382" y="41.5" width="70" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83889654810000003" blue="0.28558441140000002" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7G4-uf-hcC"/>
+                                    <constraint firstAttribute="width" constant="70" id="xVT-ye-EqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <connections>
+                                    <action selector="actionForCard:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4yH-BF-hiS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去推广" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBj-Se-4hd">
+                                <rect key="frame" x="382" y="41.5" width="55" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="IkN-vC-YNZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医药： 0/7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0It-3m-dVY">
+                                <rect key="frame" x="120" y="31.5" width="59" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wS4-tG-IQA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="要强人数满7人赠送此卡" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-8i-DTJ">
+                                <rect key="frame" x="120" y="61.5" width="252" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="phW-Ii-jkx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NU1-8i-DTJ" firstAttribute="top" secondItem="H4E-z4-wQh" secondAttribute="centerY" constant="5" id="42m-G7-UgS"/>
+                            <constraint firstItem="ARk-DR-AhP" firstAttribute="top" secondItem="H4E-z4-wQh" secondAttribute="top" id="67g-Q8-xMI"/>
+                            <constraint firstAttribute="trailing" secondItem="7ED-Om-T1b" secondAttribute="trailing" id="87J-QJ-dDu"/>
+                            <constraint firstItem="0It-3m-dVY" firstAttribute="leading" secondItem="ARk-DR-AhP" secondAttribute="leading" constant="20" id="9ch-az-4di"/>
+                            <constraint firstItem="NU1-8i-DTJ" firstAttribute="leading" secondItem="0It-3m-dVY" secondAttribute="leading" id="BNH-7e-bBZ"/>
+                            <constraint firstItem="7ED-Om-T1b" firstAttribute="leading" secondItem="H4E-z4-wQh" secondAttribute="leading" id="EgC-AQ-D7R"/>
+                            <constraint firstItem="igz-DO-zDh" firstAttribute="leading" secondItem="H4E-z4-wQh" secondAttribute="leading" constant="20" id="H1n-Ig-x84"/>
+                            <constraint firstItem="2z4-HD-xhv" firstAttribute="centerY" secondItem="H4E-z4-wQh" secondAttribute="centerY" id="InQ-rB-AiO"/>
+                            <constraint firstItem="7ED-Om-T1b" firstAttribute="top" secondItem="H4E-z4-wQh" secondAttribute="top" id="Krp-9B-qem"/>
+                            <constraint firstItem="zBj-Se-4hd" firstAttribute="bottom" secondItem="2z4-HD-xhv" secondAttribute="bottom" id="L6O-9f-EOU"/>
+                            <constraint firstItem="zBj-Se-4hd" firstAttribute="top" secondItem="2z4-HD-xhv" secondAttribute="top" id="QDe-pS-lDl"/>
+                            <constraint firstItem="8VQ-hu-QQA" firstAttribute="bottom" secondItem="igz-DO-zDh" secondAttribute="bottom" constant="-4" id="XG9-yq-6zl"/>
+                            <constraint firstItem="ARk-DR-AhP" firstAttribute="leading" secondItem="H4E-z4-wQh" secondAttribute="leading" constant="100" id="bBj-vP-lys"/>
+                            <constraint firstItem="8VQ-hu-QQA" firstAttribute="leading" secondItem="igz-DO-zDh" secondAttribute="trailing" constant="3" id="gOR-2v-Dga"/>
+                            <constraint firstAttribute="trailing" secondItem="zBj-Se-4hd" secondAttribute="trailing" id="hrv-ci-BhZ"/>
+                            <constraint firstItem="NU1-8i-DTJ" firstAttribute="top" secondItem="0It-3m-dVY" secondAttribute="bottom" constant="10" id="iLw-DC-Ckn"/>
+                            <constraint firstAttribute="bottom" secondItem="7ED-Om-T1b" secondAttribute="bottom" id="mKH-fH-HfU"/>
+                            <constraint firstItem="zBj-Se-4hd" firstAttribute="leading" secondItem="NU1-8i-DTJ" secondAttribute="trailing" constant="10" id="o5d-wm-xXs"/>
+                            <constraint firstAttribute="trailing" secondItem="2z4-HD-xhv" secondAttribute="trailing" constant="-15" id="qiw-qa-Ufd"/>
+                            <constraint firstItem="igz-DO-zDh" firstAttribute="centerY" secondItem="H4E-z4-wQh" secondAttribute="centerY" id="spJ-QK-7W0"/>
+                            <constraint firstAttribute="bottom" secondItem="ARk-DR-AhP" secondAttribute="bottom" id="uIa-vh-8w0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="H4E-z4-wQh" secondAttribute="bottom" constant="11" id="5E1-dr-zFu"/>
+                    <constraint firstAttribute="trailing" secondItem="H4E-z4-wQh" secondAttribute="trailing" constant="20" id="7tp-Ra-MJp"/>
+                    <constraint firstItem="H4E-z4-wQh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="P0S-13-pIe"/>
+                    <constraint firstItem="H4E-z4-wQh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="TeQ-QZ-T8c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardActionBtn" destination="2z4-HD-xhv" id="snx-ue-zeN"/>
+                <outlet property="cardContainView" destination="H4E-z4-wQh" id="4QB-Vb-GGY"/>
+                <outlet property="cardExplainLab" destination="NU1-8i-DTJ" id="Ffb-iF-Hje"/>
+                <outlet property="cardImage" destination="7ED-Om-T1b" id="LvH-XB-FwF"/>
+                <outlet property="cardUtis" destination="8VQ-hu-QQA" id="pCb-g5-E5h"/>
+                <outlet property="cardValueLab" destination="igz-DO-zDh" id="ta8-sz-MbZ"/>
+                <outlet property="fakeLable" destination="zBj-Se-4hd" id="CyN-Ro-8iC"/>
+                <outlet property="inviteCountLab" destination="0It-3m-dVY" id="bYE-XL-rsG"/>
+                <outlet property="lineConst" destination="bBj-vP-lys" id="BbK-Td-pRT"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="148"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="luckCardFailed.png" width="330" height="86"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserInfoView" customModule="LoveQiYi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIc" translatesAutoresizingMaskIntoConstraints="NO" id="ODI-ye-z2p">
+                    <rect key="frame" x="20" y="19" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2Dt-t6-RGd"/>
+                        <constraint firstAttribute="width" constant="60" id="KwL-wd-G1a"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTX-Yh-0Gy">
+                    <rect key="frame" x="90" y="19" width="43" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sZ-wY-dzd">
+                    <rect key="frame" x="143" y="19" width="60" height="22"/>
+                    <color key="backgroundColor" red="1" green="0.1647058824" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="dbR-S0-Em4"/>
+                        <constraint firstAttribute="width" constant="60" id="n02-sB-S4G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                    <state key="normal" title="未开通"/>
+                    <state key="selected" title="VIP"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="11"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开通会员享立VIP特权" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msf-6r-9f7">
+                    <rect key="frame" x="90" y="58" width="127" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="msf-6r-9f7" firstAttribute="bottom" secondItem="ODI-ye-z2p" secondAttribute="bottom" constant="-5" id="QoO-HL-yPN"/>
+                <constraint firstItem="WTX-Yh-0Gy" firstAttribute="top" secondItem="ODI-ye-z2p" secondAttribute="top" id="SmG-Fq-z8e"/>
+                <constraint firstItem="ODI-ye-z2p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="U2c-e2-Lg2"/>
+                <constraint firstItem="9sZ-wY-dzd" firstAttribute="leading" secondItem="WTX-Yh-0Gy" secondAttribute="trailing" constant="10" id="b33-rp-e3X"/>
+                <constraint firstItem="9sZ-wY-dzd" firstAttribute="centerY" secondItem="WTX-Yh-0Gy" secondAttribute="centerY" id="d68-h6-nH6"/>
+                <constraint firstItem="WTX-Yh-0Gy" firstAttribute="leading" secondItem="ODI-ye-z2p" secondAttribute="trailing" constant="10" id="duw-AC-q8v"/>
+                <constraint firstItem="msf-6r-9f7" firstAttribute="leading" secondItem="WTX-Yh-0Gy" secondAttribute="leading" id="iEb-Y8-ppw"/>
+                <constraint firstItem="ODI-ye-z2p" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yN1-fB-4Ge"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headerImg" destination="ODI-ye-z2p" id="rL0-ZP-Z6g"/>
+                <outlet property="nameLabel" destination="WTX-Yh-0Gy" id="VgL-YL-7rA"/>
+                <outlet property="openStatu" destination="9sZ-wY-dzd" id="GoO-al-Uwo"/>
+                <outlet property="tipsLabel" destination="msf-6r-9f7" id="ngd-jh-Nj1"/>
+            </connections>
+            <point key="canvasLocation" x="22.399999999999999" y="-180.80959520239881"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PIc" width="19" height="19"/>
+    </resources>
+</document>

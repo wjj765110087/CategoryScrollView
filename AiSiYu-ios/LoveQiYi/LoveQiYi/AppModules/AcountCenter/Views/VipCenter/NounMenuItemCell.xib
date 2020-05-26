@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NounMenuItemCell" customModule="LoveQiYi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12个月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAa-8V-gXB">
+                        <rect key="frame" x="5" y="12" width="125" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="uvg-3B-d6M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlg-cc-4JS">
+                        <rect key="frame" x="5" y="40" width="125" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="GTS-Rh-SLQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                        <color key="textColor" red="0.043137254901960784" green="0.74509803921568629" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥16.6/月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-2v-BDu">
+                        <rect key="frame" x="5" y="80" width="125" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="2tz-nb-Yve"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年省¥128" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBp-cr-Sca">
+                        <rect key="frame" x="37.5" y="102" width="60" height="18"/>
+                        <color key="backgroundColor" red="0.19765114379084966" green="0.90853662428513082" blue="0.19662511488970591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="BRp-6C-CBE"/>
+                            <constraint firstAttribute="width" constant="60" id="iPv-ch-M0E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lAa-8V-gXB" secondAttribute="trailing" constant="5" id="CYM-Ae-035"/>
+                <constraint firstItem="lAa-8V-gXB" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="DgD-Nu-66U"/>
+                <constraint firstItem="JBp-cr-Sca" firstAttribute="centerX" secondItem="ckP-2v-BDu" secondAttribute="centerX" id="I9s-dN-EgX"/>
+                <constraint firstItem="lAa-8V-gXB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="P6E-cK-YJj"/>
+                <constraint firstItem="hlg-cc-4JS" firstAttribute="top" secondItem="lAa-8V-gXB" secondAttribute="bottom" constant="8" id="SZ6-N2-z7Y"/>
+                <constraint firstItem="hlg-cc-4JS" firstAttribute="leading" secondItem="lAa-8V-gXB" secondAttribute="leading" id="hcm-fQ-Uc7"/>
+                <constraint firstItem="ckP-2v-BDu" firstAttribute="trailing" secondItem="hlg-cc-4JS" secondAttribute="trailing" id="roQ-CR-oPT"/>
+                <constraint firstItem="ckP-2v-BDu" firstAttribute="top" secondItem="hlg-cc-4JS" secondAttribute="bottom" constant="5" id="sN4-xR-mMz"/>
+                <constraint firstItem="lAa-8V-gXB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="syb-hM-3GN"/>
+                <constraint firstItem="JBp-cr-Sca" firstAttribute="top" secondItem="ckP-2v-BDu" secondAttribute="bottom" constant="7" id="x04-Vr-UtP"/>
+                <constraint firstItem="ckP-2v-BDu" firstAttribute="leading" secondItem="hlg-cc-4JS" secondAttribute="leading" id="ybi-qM-MNX"/>
+                <constraint firstItem="hlg-cc-4JS" firstAttribute="trailing" secondItem="lAa-8V-gXB" secondAttribute="trailing" id="yeJ-nb-Lbj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="135" height="140"/>
+            <connections>
+                <outlet property="priceEach" destination="ckP-2v-BDu" id="tO3-sy-0Lo"/>
+                <outlet property="priceLabel" destination="hlg-cc-4JS" id="KxG-O0-kIA"/>
+                <outlet property="timeLabel" destination="lAa-8V-gXB" id="f2u-Lj-wX3"/>
+                <outlet property="welfareLable" destination="JBp-cr-Sca" id="1UA-IV-TNG"/>
+            </connections>
+            <point key="canvasLocation" x="-399.19999999999999" y="145.72713643178412"/>
+        </collectionViewCell>
+    </objects>
+</document>

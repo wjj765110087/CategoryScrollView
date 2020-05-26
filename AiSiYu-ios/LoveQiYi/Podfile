@@ -1,0 +1,27 @@
+
+platform :ios, '9.0'
+use_frameworks!
+
+target 'LoveQiYi' do
+
+inhibit_all_warnings!
+
+pod 'NicooNetwork' # 网络请求组件
+#pod 'NicooPlayer' #播放器 （支持非加密处理流媒体播放）
+
+#pod 'Moya/RxSwift'
+
+# 第三方组件
+pod 'IQKeyboardManagerSwift'
+pod 'MJRefresh', '~> 3.1.14.1'
+pod 'MBProgressHUD','~> 1.1.0'
+pod 'SnapKit'
+pod 'KeychainSwift'
+pod 'DouYinScan'
+pod 'MarqueeLabel'
+
+
+pod 'FMDB'
+pod 'CocoaHTTPServer'
+
+end

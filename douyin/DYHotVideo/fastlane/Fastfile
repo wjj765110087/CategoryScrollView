@@ -1,0 +1,78 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+#声明
+
+APP_NAME = “QHAwemeDemo”
+WORKSPACE = “QHAwemeDemo.xcworkspace"
+SCHEME = “QHAwemeDemo_Dev”
+IPA_TIME = Time.now.strftime("%Y%m%d_%H%M")
+OUTPUT_DIRECTORY = "packages"
+APP_INFO_PLIST_PATH = ‘./QHAwemeDemo/Info.plist'
+ENV_PREFIX=""
+IPA_NAME = "QHAwemeDemo"
+
+platform :ios do
+  #
+  before_all do
+       xcode_select "/Applications/Xcode.app"
+       FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT = "40"
+  end
+
+  #debug包
+  lane :QHAwemeDemo_Dev do
+    ENV_PREFIX="Dev_"
+    EXPORT_METHOD = "development"
+    package(configuration: "Dev")
+  end
+
+  #release包
+  lane :QHAwemeDemo do
+    ENV_PREFIX="adhoc_"
+    EXPORT_METHOD = "ad-hoc"
+    package(configuration: "Release")
+  end
+
+    #发布包
+  lane :iosAppStore do
+    ENV_PREFIX="appstore_"
+    EXPORT_METHOD = "app-store"
+    package(configuration: "Release")
+  end
+
+   #打包函数
+  lane :package do |option|
+      cocoapods
+      PLIST_INFO_VERSION = get_version_number(target: "#{SCHEME}")
+      PLIST_BUILD_VERSION = get_info_plist_value(path: "#{APP_INFO_PLIST_PATH}", key: 'CFBundleVersion')
+      IPA_NAME = "#{ENV_PREFIX}" + "#{APP_NAME}_"  +  "#{IPA_TIME}_" + "#{PLIST_INFO_VERSION}" +"_#{PLIST_BUILD_VERSION}"+ ".ipa"
+
+     #打包
+     gym(
+      scheme: "#{SCHEME}",
+      export_method: "#{EXPORT_METHOD}",
+      configuration: option[:configuration],
+      output_directory: "#{OUTPUT_DIRECTORY}",
+      include_symbols: true,
+      include_bitcode: false,
+      xcargs: 'DEBUG_INFORMATION_FORMAT="dwarf-with-dsym"',
+      output_name: "#{IPA_NAME}",
+      export_xcargs: "-allowProvisioningUpdates"
+      )
+      xcclean(
+       workspace: "#{WORKSPACE}",
+       scheme: "#{SCHEME}"
+      )
+  end

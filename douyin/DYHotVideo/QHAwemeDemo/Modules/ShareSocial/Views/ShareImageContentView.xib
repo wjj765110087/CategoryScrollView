@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareImageContentView" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="476"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultShare0" translatesAutoresizingMaskIntoConstraints="NO" id="YxU-qu-uaN">
+                    <rect key="frame" x="0.0" y="0.0" width="329" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="vXc-Hi-nYc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抖阴#巨乳合集的视频都超好看，快来下载抖阴观看" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fns-Nt-ZwJ">
+                    <rect key="frame" x="10" y="195" width="309" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peN-eI-cWV">
+                    <rect key="frame" x="15" y="351" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="5Q6-Gm-ZAx"/>
+                        <constraint firstAttribute="width" constant="100" id="BVK-I9-zWr"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H2VV8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-q7-IBu">
+                    <rect key="frame" x="199" y="351" width="115" height="35"/>
+                    <color key="backgroundColor" red="1" green="0.1647058824" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="KPl-T9-U9C"/>
+                        <constraint firstAttribute="width" constant="115" id="gJ1-Qc-Aps"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抖阴分享性福生活" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuR-q1-1qc">
+                    <rect key="frame" x="125" y="435" width="189" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://5dy.me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er7-ld-QP4">
+                    <rect key="frame" x="125" y="403" width="189" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDQ-KZ-tcX">
+                    <rect key="frame" x="142" y="67.5" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="EQP-rp-VgW"/>
+                        <constraint firstAttribute="height" constant="45" id="PVr-qu-vIa"/>
+                    </constraints>
+                    <state key="normal" image="CommunityPlayIcon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.17254901960784313" green="0.15686274509803921" blue="0.23529411764705882" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="peN-eI-cWV" secondAttribute="bottom" constant="25" id="10d-IW-k3V"/>
+                <constraint firstItem="IuR-q1-1qc" firstAttribute="bottom" secondItem="peN-eI-cWV" secondAttribute="bottom" id="7bW-6R-Tkn"/>
+                <constraint firstItem="IuR-q1-1qc" firstAttribute="trailing" secondItem="Er7-ld-QP4" secondAttribute="trailing" id="Cqj-vn-xmF"/>
+                <constraint firstAttribute="trailing" secondItem="XJB-q7-IBu" secondAttribute="trailing" constant="15" id="DKS-nA-Xp7"/>
+                <constraint firstItem="XJB-q7-IBu" firstAttribute="top" secondItem="peN-eI-cWV" secondAttribute="top" id="FPT-yH-fP5"/>
+                <constraint firstItem="yDQ-KZ-tcX" firstAttribute="centerX" secondItem="YxU-qu-uaN" secondAttribute="centerX" id="KHP-UL-z8n"/>
+                <constraint firstItem="yDQ-KZ-tcX" firstAttribute="centerY" secondItem="YxU-qu-uaN" secondAttribute="centerY" id="MFA-y5-3hA"/>
+                <constraint firstItem="YxU-qu-uaN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P2s-GN-Vd3"/>
+                <constraint firstItem="fns-Nt-ZwJ" firstAttribute="trailing" secondItem="YxU-qu-uaN" secondAttribute="trailing" constant="-10" id="QcC-gl-vMU"/>
+                <constraint firstItem="IuR-q1-1qc" firstAttribute="leading" secondItem="Er7-ld-QP4" secondAttribute="leading" id="RQc-mp-dbW"/>
+                <constraint firstItem="IuR-q1-1qc" firstAttribute="leading" secondItem="peN-eI-cWV" secondAttribute="trailing" constant="10" id="WX2-n9-bxh"/>
+                <constraint firstItem="fns-Nt-ZwJ" firstAttribute="leading" secondItem="YxU-qu-uaN" secondAttribute="leading" constant="10" id="X5K-m1-V6v"/>
+                <constraint firstItem="IuR-q1-1qc" firstAttribute="top" secondItem="Er7-ld-QP4" secondAttribute="bottom" constant="15" id="dfX-gy-JRk"/>
+                <constraint firstItem="peN-eI-cWV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="lGR-XI-vcD"/>
+                <constraint firstAttribute="trailing" secondItem="YxU-qu-uaN" secondAttribute="trailing" id="mTF-ME-Kja"/>
+                <constraint firstItem="YxU-qu-uaN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mym-QV-XQy"/>
+                <constraint firstItem="fns-Nt-ZwJ" firstAttribute="top" secondItem="YxU-qu-uaN" secondAttribute="bottom" constant="15" id="oKm-4L-2k9"/>
+                <constraint firstAttribute="trailing" secondItem="IuR-q1-1qc" secondAttribute="trailing" constant="15" id="pYO-qp-AfD"/>
+                <constraint firstItem="XJB-q7-IBu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fns-Nt-ZwJ" secondAttribute="bottom" constant="10" id="uII-Zj-6Uh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="inviteCodeImg" destination="peN-eI-cWV" id="yde-rX-pdX"/>
+                <outlet property="inviteCodeText" destination="XJB-q7-IBu" id="cea-sq-hFJ"/>
+                <outlet property="shareText" destination="fns-Nt-ZwJ" id="SSO-5g-6dy"/>
+                <outlet property="tipsLabel" destination="IuR-q1-1qc" id="zdz-5W-ZzX"/>
+                <outlet property="topicImage" destination="YxU-qu-uaN" id="zbr-O8-5qf"/>
+                <outlet property="webLabel" destination="Er7-ld-QP4" id="fkO-qO-JGv"/>
+            </connections>
+            <point key="canvasLocation" x="-330.39999999999998" y="71.964017991004496"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CommunityPlayIcon" width="54.5" height="54.5"/>
+        <image name="defaultShare0" width="654" height="409"/>
+    </resources>
+</document>

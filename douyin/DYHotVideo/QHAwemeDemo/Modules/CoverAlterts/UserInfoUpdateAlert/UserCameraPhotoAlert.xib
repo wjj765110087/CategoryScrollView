@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="plQ-9X-NDt" customClass="UserCameraPhotoAlert" customModule="QHAwemeDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-BY-VKO">
+                    <rect key="frame" x="61.5" y="273.5" width="252" height="120.5"/>
+                    <subviews>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-SZ-PQe">
+                            <rect key="frame" x="0.0" y="0.0" width="252" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="fAT-eS-Fcj"/>
+                            </constraints>
+                            <state key="normal" title="拍一张">
+                                <color key="titleColor" red="0.12941176470588234" green="0.19215686274509802" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didClickCamera:" destination="plQ-9X-NDt" eventType="touchUpInside" id="7zX-dP-fZi"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRs-79-cZE">
+                            <rect key="frame" x="0.0" y="60" width="252" height="0.5"/>
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="opq-La-hOP"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aY-pv-vsI">
+                            <rect key="frame" x="0.0" y="60.5" width="252" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="S3J-bw-uPY"/>
+                            </constraints>
+                            <state key="normal" title="相册选择">
+                                <color key="titleColor" red="0.12941176470588234" green="0.19215686274509802" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didClickPhoto:" destination="plQ-9X-NDt" eventType="touchUpInside" id="mf7-E1-1Sr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1aY-pv-vsI" firstAttribute="leading" secondItem="mv5-BY-VKO" secondAttribute="leading" id="Awl-Ab-Blg"/>
+                        <constraint firstItem="yRs-79-cZE" firstAttribute="top" secondItem="a4S-SZ-PQe" secondAttribute="bottom" id="E0i-Lx-pvD"/>
+                        <constraint firstAttribute="width" constant="252" id="KFm-Vz-TSW"/>
+                        <constraint firstAttribute="trailing" secondItem="a4S-SZ-PQe" secondAttribute="trailing" id="M8j-xe-JzO"/>
+                        <constraint firstAttribute="trailing" secondItem="yRs-79-cZE" secondAttribute="trailing" id="O0c-Vc-8Uh"/>
+                        <constraint firstItem="yRs-79-cZE" firstAttribute="leading" secondItem="mv5-BY-VKO" secondAttribute="leading" id="TAA-tO-RB2"/>
+                        <constraint firstAttribute="height" constant="120.5" id="YAg-yJ-aX0"/>
+                        <constraint firstItem="a4S-SZ-PQe" firstAttribute="leading" secondItem="mv5-BY-VKO" secondAttribute="leading" id="dQ4-cI-RVc"/>
+                        <constraint firstAttribute="trailing" secondItem="1aY-pv-vsI" secondAttribute="trailing" id="f2x-BG-PnY"/>
+                        <constraint firstAttribute="bottom" secondItem="1aY-pv-vsI" secondAttribute="bottom" id="sM7-Vg-7Ur"/>
+                        <constraint firstItem="a4S-SZ-PQe" firstAttribute="top" secondItem="mv5-BY-VKO" secondAttribute="top" id="ytz-S8-pIA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mv5-BY-VKO" firstAttribute="centerY" secondItem="plQ-9X-NDt" secondAttribute="centerY" id="0Oe-TA-3Ac"/>
+                <constraint firstItem="mv5-BY-VKO" firstAttribute="centerX" secondItem="plQ-9X-NDt" secondAttribute="centerX" id="g0a-aU-0ZA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="T92-v6-fhR"/>
+            <point key="canvasLocation" x="-183.19999999999999" y="-50.824587706146929"/>
+        </view>
+    </objects>
+</document>
